@@ -1,0 +1,46 @@
+/* small.scss – Mobile adjustments only */
+
+@media (max-width: 899px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 68px;
+    width: min(320px, calc(100% - 2rem));
+    flex-direction: column;
+    padding: 0.8rem;
+    border-radius: 16px;
+    background: rgba(21, 25, 37, 0.95);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hero-visual {
+    height: 280px;
+  }
+
+  .thanks-section {
+    padding: 4rem 1rem 6rem;
+  }
+
+  .thanks-card {
+    padding: 2rem 1.5rem;
+  }
+}

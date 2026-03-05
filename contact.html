@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Savannah Longmore</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Savannah Longmore</span>
+      </a>
+
+      <button class="nav-toggle"
+              data-nav-toggle
+              aria-expanded="false"
+              aria-controls="navMenu">
+        Menu
+      </button>
+
+      <nav id="navMenu" class="nav-links" data-nav-menu>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-title">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p class="lede">
+          Have a project in mind, a question about my work, or just want to say hi?  
+          I'd love to hear from you.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="contact-grid">
+
+          <!-- Left: Form -->
+          <div class="contact-form-card">
+            <h2>Send a Message</h2>
+
+            <form id="contact-form" action="https://formspree.io/f/xgolbaqg" method="POST">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  placeholder="Your name" 
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  placeholder="your.email@example.com" 
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="6" 
+                  placeholder="Tell me about your project, question, or just say hi..." 
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Honeypot spam protection (invisible to humans) -->
+              <input type="text" name="_gotcha" style="display:none" />
+
+              <!-- Custom email subject -->
+              <input type="hidden" name="_subject" value="New message from Savannah's Portfolio" />
+
+              <!-- Redirect after success -->
+              <input type="hidden" name="_next" value="thanks.html" />
+<input type="hidden" name="_autoresponse" value="Thanks for your message! I'll reply soon." />
+
+              <button type="submit" class="btn btn--primary">Send Message</button>
+            </form>
+
+            <p class="form-note muted" style="margin-top: 1.5rem; font-size: 0.95rem;">
+              I'll get back to you within 1–2 business days.
+            </p>
+          </div>
+
+          <!-- Right: Contact info + social -->
+          <div class="contact-info-card">
+            <h2>Reach Out</h2>
+            <p>
+              Email: <a href="mailto:savannah.longmore@gmail.com">savannah.longmore@gmail.com</a><br>
+              Location: Eagle Mountain, Utah
+            </p>
+
+            <h3>Find me on</h3>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/savannah-longmore-990329307/" target="_blank" rel="noopener noreferrer" class="social-link">
+                LinkedIn
+              </a>
+              <!-- Add more if you have them -->
+              <!-- <a href="https://behance.net/yourusername" target="_blank" rel="noopener noreferrer">Behance</a> -->
+              <!-- <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">Instagram</a> -->
+            </div>
+
+            <p style="margin-top: 2rem; color: var(--muted);">
+              Currently open to freelance opportunities, collaborations, or just interesting conversations.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Savannah Longmore •
+      <a href="resume.html">View Resume</a> •
+      <a href="assets/resume/Savannah-Longmore-Resume.pdf" download>Download Resume</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

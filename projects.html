@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Savannah Longmore</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Savannah Longmore</span>
+      </a>
+      <button class="nav-toggle" 
+              data-nav-toggle 
+              aria-expanded="false" 
+              aria-controls="navMenu">
+        Menu
+      </button>
+      <nav id="navMenu" class="nav-links" data-nav-menu>
+        <a href="index.html">Home</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Intro / Title Section – matches About/Contact style -->
+    <section class="page-title">
+      <div class="container">
+        <h1>All Projects</h1>
+        <p class="lede">
+          A selection of my favorite work — from UX research and interface design to coded websites, motion graphics, and graphic storytelling.<br><br>
+          Each case study includes process, decisions, tools, and outcomes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section class="section">
+      <div class="container">
+        <div class="projectsGrid" data-project-grid>
+          <!-- JS fills cards here -->
+          <p style="text-align:center; color:var(--muted);">Loading projects...</p>
+        </div>
+
+        <!-- Optional closing CTA -->
+        <div style="text-align: center; margin-top: 4rem;">
+          <p class="muted" style="margin-bottom: 1.5rem;">
+            Interested in working together or have a question about a project?
+          </p>
+          <div class="btn-row" style="justify-content: center;">
+            <a class="btn btn--primary" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Savannah Longmore •
+      <a href="resume.html">View Resume</a> •
+      <a href="assets/resume/Savannah-Longmore-Resume.pdf" download>Download Resume</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

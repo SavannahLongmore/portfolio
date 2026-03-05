@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Savannah Longmore</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Savannah Longmore</span>
+      </a>
+
+      <button class="nav-toggle"
+              data-nav-toggle
+              aria-expanded="false"
+              aria-controls="navMenu">
+        Menu
+      </button>
+
+      <nav id="navMenu" class="nav-links" data-nav-menu>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-title">
+      <div class="container">
+        <h1>About Me</h1>
+        <p class="lede">Designer, coder, storyteller — turning ideas into meaningful digital experiences.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="about-grid">
+
+          <!-- Left column: Photo + intro -->
+          <div class="about-photo-card">
+            <div class="about-photo">
+              <img src="assets/img/savannah-portfolio.webp" alt="Savannah Longmore">
+            </div>
+            <div class="about-contact">
+              <h3>Let's connect</h3>
+              <p>
+                Email: <a href="mailto:hello@savannahlongmore.com">hello@savannahlongmore.com</a><br>
+                Based in Eagle Mountain, Utah
+              </p>
+            </div>
+          </div>
+          
+          <!-- Right column: Story + skills -->
+          <div class="about-content">
+
+            <h2>Hi, I'm Savannah</h2>
+            <p>
+              I'm a multidisciplinary designer who loves solving real user problems through thoughtful research, clean interfaces, and a bit of motion magic.
+              <br><br>
+              My work blends UX/UI design, front-end development, graphic design, and motion — always with accessibility, clarity, and human connection in mind.
+            </p>
+
+            <p>
+              Whether I'm prototyping in Figma, coding responsive layouts with HTML/CSS, building interactive experiences in Framer, or crafting cinematic motion in After Effects, I aim to create work that feels intuitive, beautiful, and purposeful.
+            </p>
+
+            <h3>Things I enjoy working with</h3>
+            <div class="chips">
+              <span class="chip">Figma</span>
+              <span class="chip">HTML & CSS</span>
+              <span class="chip">Responsive Design</span>
+              <span class="chip">Framer</span>
+              <span class="chip">After Effects</span>
+              <span class="chip">UX Research</span>
+              <span class="chip">Motion Design</span>
+              <span class="chip">Accessibility</span>
+              <span class="chip">Graphic Design</span>
+              <span class="chip">InDesign</span>
+            </div>
+
+            <h3>Background</h3>
+            <ul class="bullets">
+              <li>Studied Digital Media / Design at Utah Valley University</li>
+              <li>Hands-on experience building real-world websites and prototypes</li>
+              <li>Passionate about creating inclusive, performant, and emotionally resonant digital products</li>
+              <li>Always learning — currently diving deeper into interaction design and micro-animations</li>
+            </ul>
+
+            <div class="btn-row" style="margin-top: 2rem;">
+              <a class="btn btn--primary" href="projects.html">See My Projects</a>
+              <a class="btn" href="contact.html">Get in Touch</a>
+              <a class="btn" href="assets/resume/Savannah-Longmore-Resume.pdf" download>Download Resume</a>
+              <a class="btn" href="https://www.linkedin.com/in/savannah-longmore-990329307/">LinkedIn</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Savannah Longmore •
+      <a href="resume.html">View Resume</a> •
+      <a href="assets/resume/Savannah-Longmore-Resume.pdf" download>Download Resume</a> •
+      <a href="https://www.linkedin.com/in/savannah-longmore-990329307/">LinkedIn</a>
+    </div>
+</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

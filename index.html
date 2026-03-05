@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Savannah Longmore | Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Savannah Longmore</span>
+      </a>
+
+      <button class="nav-toggle"
+              data-nav-toggle
+              aria-expanded="false"
+              aria-controls="navMenu">
+        Menu
+      </button>
+
+      <nav id="navMenu" class="nav-links" data-nav-menu>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+<section class="hero">
+  <div class="container hero-grid">
+
+    <!-- Left side: text + chips + buttons -->
+    <div class="card">
+      <h1>Web & UI design with a clean, user-centered mindset.</h1>
+      <p class="lede">
+        I’m a Web and Graphic Designer with hands-on experience in Figma, responsive design, and accessibility-focused layouts.<br><br>
+        I build thoughtful interfaces and bring them to life on the web.
+      </p>
+      <div class="chips">
+        <span class="chip">Figma</span>
+        <span class="chip">HTML / CSS</span>
+        <span class="chip">Responsive Design</span>
+        <span class="chip">Accessibility-aware</span>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="projects.html">View Projects</a>
+        <a class="btn" href="resume.html">View Resume</a>
+        <a class="btn" href="contact.html">Contact</a>
+        <a class="btn" href="https://www.linkedin.com/in/savannah-longmore-990329307/">LinkedIn</a>
+      </div>
+    </div>
+    
+    <!-- Right side: Carousel container – no extra .card wrapper -->
+    <div class="hero-visual">
+      <div class="project-carousel">
+        <img src="assets/img/uvu-bookstore-homepage-mockup.webp" alt="UVU Bookstore Redesign" class="carousel-item">
+        <img src="assets/img/velombra-mockup.webp" alt="Coded Diner Website" class="carousel-item">
+        <img src="assets/img/sweatshop-mockup.webp" alt="Sweatshop Interactive" class="carousel-item">
+        <img src="assets/img/multimedia-mockup.webp" alt="Multimedia Optimization Research" class="carousel-item">
+        <img src="assets/img/Disneyfirework.webp" alt="Disney Castle Motion Graphic" class="carousel-item">
+        <img src="assets/img/Wedding-cover-mockup.webp" alt="Survival Guide for Getting Remarried" class="carousel-item">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <section class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Case Studies</h2>
+          <p class="muted">Selected projects — research, design, code, motion</p>
+        </div>
+
+        <!-- This is where your JavaScript will insert the dynamic project cards -->
+        <div class="projectsGrid" data-project-grid>
+          <!-- Cards will be added here automatically by main.js -->
+          <!-- While developing, you can leave a loading message or placeholder if you want -->
+          <p style="text-align:center; color:var(--muted);">Loading projects...</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Savannah Longmore •
+      <a href="resume.html">View Resume</a> •
+      <a href="assets/resume/Savannah-Longmore-Resume.pdf" download>Download Resume</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

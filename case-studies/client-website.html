@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UVU Bookstore Redesign | Savannah Longmore</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="../index.html">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Savannah Longmore</span>
+      </a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="navMenu">Menu</button>
+      <nav id="navMenu" class="nav-links" data-nav-menu>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html" aria-current="page">Projects</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-title">
+      <div class="container">
+        <h1>UVU Bookstore Redesign</h1>
+        <p class="lede">Responsive homepage prototype in Figma focused on clarity, hierarchy, and a calmer shopping experience.</p>
+        <div class="chips">
+          <span class="chip">Figma</span>
+          <span class="chip">UI</span>
+          <span class="chip">Responsive</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="card">
+          <h2 style="margin-top:0;">Problem</h2>
+          <p class="lede" style="margin-bottom:0;">
+            (Write 2–3 sentences: what wasn’t working and what users needed.)
+          </p>
+        </div>
+
+        <div class="card">
+          <h2 style="margin-top:0;">Solution</h2>
+          <p class="lede" style="margin-bottom:0;">
+            (Write 2–3 sentences: what you designed and why it improves the experience.)
+          </p>
+        </div>
+
+        <div class="card" style="grid-column: 1 / -1;">
+          <h2 style="margin-top:0;">Key decisions</h2>
+          <ul style="margin:0; padding-left:1.2rem; color: var(--muted); line-height:1.7;">
+            <li>Improved visual hierarchy and spacing</li>
+            <li>Designed responsive layout patterns</li>
+            <li>Accessibility-aware typography and contrast</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <footer class="footer">
+  <div class="container">
+    © <span id="year"></span> Savannah Longmore •
+    
+    <a href="../assets/resume/Savannah-Longmore-Resume.pdf" target="_blank" rel="noopener">
+      View Resume
+    </a>
+    
+    •
+    
+    <a href="../assets/resume/Savannah-Longmore-Resume.pdf" download>
+      Download Resume
+    </a>
+    
+  </div>
+</footer>
+
+  <script type="module">
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

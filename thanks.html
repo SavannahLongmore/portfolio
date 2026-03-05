@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thanks! | Savannah Longmore</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Savannah Longmore</span>
+      </a>
+
+      <button class="nav-toggle"
+              data-nav-toggle
+              aria-expanded="false"
+              aria-controls="navMenu">
+        Menu
+      </button>
+
+      <nav id="navMenu" class="nav-links" data-nav-menu>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="section thanks-section">
+      <div class="container">
+        <div class="thanks-card">
+          <h1>Message Sent!</h1>
+          <p class="lede">
+            Thank you for reaching out, Savannah will get back to you within 1–2 business days.
+          </p>
+          <p class="muted" style="margin: 2rem 0;">
+            In the meantime, feel free to explore more of my work:
+          </p>
+
+          <div class="btn-row" style="justify-content: center; flex-wrap: wrap; gap: 1rem;">
+            <a href="projects.html" class="btn btn--primary">View Projects</a>
+            <a href="index.html" class="btn">Back to Home</a>
+          </div>
+
+          <div style="margin-top: 3rem; text-align: center;">
+            <p class="muted" style="font-size: 0.95rem;">
+              Or connect with me on
+              <a href="https://www.linkedin.com/in/savannah-longmore-990329307/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Savannah Longmore •
+      <a href="resume.html">View Resume</a> •
+      <a href="assets/resume/Savannah-Longmore-Resume.pdf" download>Download Resume</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

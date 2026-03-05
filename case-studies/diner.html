@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coded Diner Website | Savannah Longmore</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="../index.html">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Savannah Longmore</span>
+      </a>
+
+      <button class="nav-toggle"
+              data-nav-toggle
+              aria-expanded="false"
+              aria-controls="navMenu">
+        Menu
+      </button>
+
+      <nav id="navMenu" class="nav-links" data-nav-menu>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Split-Screen Hero -->
+    <section class="case-hero">
+      <div class="container">
+        <div class="hero-split">
+          <!-- Left: Text + Metadata -->
+          <div class="hero-text">
+            <div class="case-meta">
+              <span class="case-date">2024</span>
+              <h1>Coded Diner Website</h1>
+              <p class="case-subtitle">
+                Hand-coded responsive diner site with smooth interactions and mobile-first design
+              </p>
+            </div>
+
+            <div class="case-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Responsive</span>
+            </div>
+          </div>
+
+          <!-- Right: Cover Image -->
+          <div class="hero-image">
+            <div class="case-cover">
+              <img src="../assets/img/velombra-mockup.webp" 
+                   alt="Coded Diner Desktop View" 
+                   loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Overview</h2>
+        <p>
+          This project focused on translating clean design into functional code. I built the entire homepage of a fictional diner website from scratch using HTML, CSS, and JavaScript. The goal was a responsive, engaging site that works beautifully on desktop and mobile while demonstrating solid front-end skills.
+        </p>
+
+        <div class="case-details-grid">
+          <div>
+            <h3>My Role</h3>
+            <p>UX/UI Designer & Front-End Developer</p>
+          </div>
+          <div>
+            <h3>Tools</h3>
+            <p>HTML, CSS, JavaScript, VS Code</p>
+          </div>
+          <div>
+            <h3>Focus</h3>
+            <p>Responsive layout, interactivity, performance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features & Challenges -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Key Features & Challenges</h2>
+        <p>
+          I solved several responsive and interactive challenges while keeping the code clean and performant.
+        </p>
+
+        <div class="case-image-grid">
+          <figure>
+            <img src="../assets/img/coded-diner-desktop-full.webp" alt="Desktop Homepage" loading="lazy">
+            <figcaption>Desktop view – clean layout, 3-column carousel</figcaption>
+          </figure>
+
+          <figure>
+            <img src="../assets/img/coded-diner-mobile-full.webp" alt="Mobile Homepage" loading="lazy">
+            <figcaption>Mobile view – stacked layout, 1-card carousel</figcaption>
+          </figure>
+
+          <figure>
+            <img src="../assets/img/coded-diner-nav-desktop.webp" alt="Desktop Navigation" loading="lazy">
+            <figcaption>Desktop navigation – horizontal menu</figcaption>
+          </figure>
+
+          <figure>
+            <img src="../assets/img/coded-diner-nav-mobile.webp" alt="Mobile Hamburger Menu" loading="lazy">
+            <figcaption>Mobile navigation – JavaScript hamburger</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performance & Optimization -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Performance & Optimization</h2>
+        <p>
+          I optimized images and code to keep the site fast and smooth:
+        </p>
+        <ul class="bullets">
+          <li>Compressed images → reduced total size significantly</li>
+          <li>Mobile-first CSS → faster load on phones</li>
+          <li>Minimal JavaScript → carousel and nav work smoothly</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Final Full View -->
+<section class="section case-section">
+  <div class="container">
+    <h2>Try It Live – Mobile Experience</h2>
+    <p class="muted" style="text-align: center; margin-bottom: 1.5rem;">
+      Interact with the real site: click buttons, open the menu, scroll — all inside this preview.
+    </p>
+
+    <div class="live-demo-container">
+      <iframe 
+        id="live-demo"
+        src="https://savannahlongmore.github.io/diner/" 
+        title="Coded Diner Website - Live Interactive Demo"
+        sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+        loading="lazy">
+      </iframe>
+      <div class="loading-spinner" id="demo-loading">Loading demo...</div>
+    </div>
+
+    <div id="demo-fallback" class="demo-fallback" style="display:none; text-align:center; margin-top:1.5rem;">
+      <p>Looks like the interactive preview couldn't load here.</p>
+      <a href="https://savannahlongmore.github.io/diner/" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="btn btn--primary">
+        Open Live Site in New Tab →
+      </a>
+    </div>
+
+    <p class="muted small-note" style="text-align:center; font-size:0.9rem; margin-top:1rem;">
+      Interactive demo (may not work in all browsers — use the link above if needed)
+    </p>
+  </div>
+</section>
+
+<script>
+  const iframe = document.getElementById('live-demo');
+  const fallback = document.getElementById('demo-fallback');
+  const loading = document.getElementById('demo-loading');
+
+  // Hide loading spinner once iframe starts loading content
+  iframe.onload = () => {
+    loading.style.display = 'none';
+  };
+
+  // Show fallback if iframe fails or takes too long
+  setTimeout(() => {
+    if (loading.style.display !== 'none') {
+      loading.style.display = 'none';
+      fallback.style.display = 'block';
+    }
+  }, 8000);
+
+  iframe.onerror = () => {
+    loading.style.display = 'none';
+    fallback.style.display = 'block';
+  };
+</script>
+
+    <!-- CTA -->
+    <section class="section case-cta">
+      <div class="container">
+        <h2>Interested in coded, responsive projects?</h2>
+        <div class="btn-row" style="justify-content: center;">
+          <a href="../contact.html" class="btn btn--primary">Get in Touch</a>
+          <a href="../projects.html" class="btn">Back to Projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Savannah Longmore •
+      <a href="../resume.html">View Resume</a> •
+      <a href="../assets/resume/Savannah-Longmore-Resume.pdf" download>Download Resume</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script type="module" src="../js/main.js"></script>
+
+</body>
+</html>

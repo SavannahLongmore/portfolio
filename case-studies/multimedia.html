@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Multimedia Optimization Research | Savannah Longmore</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="../index.html">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Savannah Longmore</span>
+      </a>
+
+      <button class="nav-toggle"
+              data-nav-toggle
+              aria-expanded="false"
+              aria-controls="navMenu">
+        Menu
+      </button>
+
+      <nav id="navMenu" class="nav-links" data-nav-menu>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Split-Screen Hero -->
+    <section class="case-hero">
+      <div class="container">
+        <div class="hero-split">
+          <div class="hero-text">
+            <div class="case-meta">
+              <span class="case-date">2024</span>
+              <h1>Multimedia Optimization Research</h1>
+              <p class="case-subtitle">
+                Exploring file formats, compression, performance impact, and user perception trade-offs
+              </p>
+            </div>
+
+            <div class="case-tags">
+              <span class="tag">UX Research</span>
+              <span class="tag">Web Performance</span>
+              <span class="tag">Media Formats</span>
+              <span class="tag">Optimization</span>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <div class="case-cover">
+              <img src="../assets/img/multimedia-mockup.webp" 
+                   alt="Multimedia Optimization Research Cover" 
+                   loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Overview</h2>
+        <p>
+          This research project examined how different multimedia formats (JPEG vs WebP vs AVIF, video codecs, etc.) affect loading times, bandwidth usage, visual quality, and perceived user experience on the web. The goal was to create practical guidelines for choosing the right format in real-world design scenarios.
+        </p>
+
+        <div class="case-details-grid">
+          <div>
+            <h3>My Role</h3>
+            <p>UX Researcher & Analyst</p>
+          </div>
+          <div>
+            <h3>Methods</h3>
+            <p>Performance testing, A/B comparisons, user perception surveys</p>
+          </div>
+          <div>
+            <h3>Deliverable</h3>
+            <p>Research report + format decision framework</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Findings -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Key Findings</h2>
+        <p>
+          Through controlled tests and user feedback, several clear patterns emerged regarding format performance and perception.
+        </p>
+
+        <ul class="bullets">
+          <li>AVIF and WebP reduced file sizes by 30–60% compared to JPEG while maintaining or improving perceived quality</li>
+          <li>Users consistently rated faster-loading pages as higher quality — even when objective visual differences were small</li>
+          <li>Mobile users were particularly sensitive to large video files; modern codecs (e.g. AV1, VP9) significantly improved playback smoothness</li>
+          <li>Accessibility (alt text, captions) was frequently overlooked in highly compressed assets</li>
+        </ul>
+
+        <div class="case-image-grid">
+          <img src="../assets/img/multimedia-chart.webp" alt="File size vs quality comparison chart" loading="lazy">
+          <img src="../assets/img/multimedia-test-results.webp" alt="Performance test results across formats" loading="lazy">
+          <img src="../assets/img/multimedia-user-feedback.webp" alt="User perception survey results" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Recommendations</h2>
+        <p>
+          Based on the findings, I developed a simple decision framework for multimedia assets:
+        </p>
+        <ul class="bullets">
+          <li>Default to AVIF/WebP for static images when browser support allows</li>
+          <li>Use JPEG as fallback for broader compatibility</li>
+          <li>Apply lazy loading + responsive images (srcset) for all media</li>
+          <li>Prefer modern video codecs (AV1/VP9) and provide captions/transcripts</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Full Research Document Preview -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Full Research Document</h2>
+        <p class="muted" style="text-align: center; margin-bottom: 2rem;">
+          80-page research report exploring multimedia formats, compression, performance, and user experience.
+        </p>
+
+        <div class="pdf-preview-card">
+          <img src="../assets/img/mulimedia-output-1-2.webp" 
+               alt="Multimedia Optimization Research Document Cover" 
+               loading="lazy">
+
+          <div class="pdf-overlay">
+            <button class="btn btn--primary" data-open-pdf>
+              View Full Research Report
+            </button>
+            <a href="../assets/documents/multimedia-research.pdf" 
+               download 
+               class="btn">
+              Download PDF
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section case-cta">
+      <div class="container">
+        <h2>Interested in performance-focused research?</h2>
+        <div class="btn-row" style="justify-content: center;">
+          <a href="../contact.html" class="btn btn--primary">Get in Touch</a>
+          <a href="../projects.html" class="btn">Back to Projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PDF Modal -->
+  <div id="pdfModal" class="modal" aria-hidden="true">
+    <div class="modal__overlay" data-close-pdf></div>
+    
+    <div class="modal__panel pdf-panel">
+      <button class="modal-close" data-close-pdf aria-label="Close document">×</button>
+      
+      <iframe 
+        id="pdf-frame"
+        src="../assets/documents/multimedia-research.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+        title="Multimedia Optimization Research Document"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Savannah Longmore •
+      <a href="../resume.html">View Resume</a> •
+      <a href="../assets/resume/Savannah-Longmore-Resume.pdf" download>Download Resume</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // PDF Modal
+    const pdfModal = document.getElementById("pdfModal");
+
+    if (pdfModal) {
+      document.querySelectorAll("[data-open-pdf]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          pdfModal.classList.add("is-open");
+          document.body.style.overflow = "hidden";
+        });
+      });
+
+      document.querySelectorAll("[data-close-pdf]").forEach(el => {
+        el.addEventListener("click", () => {
+          pdfModal.classList.remove("is-open");
+          document.body.style.overflow = "";
+        });
+      });
+
+      pdfModal.addEventListener("click", e => {
+        if (e.target === pdfModal) {
+          pdfModal.classList.remove("is-open");
+          document.body.style.overflow = "";
+        }
+      });
+    }
+  </script>
+
+  <script type="module" src="../js/main.js"></script>
+
+</body>
+</html>
