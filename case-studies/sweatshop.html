@@ -12,13 +12,26 @@
   <a class="skip" href="#main">Skip to content</a>
 
   <header>
+    <button class="back-button" type="button" aria-label="Go back to previous page" data-back-button>
+      ← Back
+    </button>
+
     <div class="container nav">
       <a class="brand" href="../index.html">
-        <span class="brand-badge" aria-hidden="true"></span>
-        <span>Savannah Longmore</span>
-      </a>
+  <img 
+    src="../assets/img/favicon.png"
+    alt="Savannah Longmore logo"
+    class="brand-logo"
+  >
+  <span>Savannah Longmore</span>
+</a>
 
-      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="navMenu">Menu</button>
+      <button class="nav-toggle"
+              data-nav-toggle
+              aria-expanded="false"
+              aria-controls="navMenu">
+        Menu
+      </button>
 
       <nav id="navMenu" class="nav-links" data-nav-menu>
         <a href="../index.html">Home</a>
@@ -31,33 +44,32 @@
 
   <main id="main">
 
-    <!-- Split-Screen Hero -->
+    <!-- HERO -->
     <section class="case-hero">
       <div class="container">
         <div class="hero-split">
-          <!-- Left: Text + Metadata -->
           <div class="hero-text">
             <div class="case-meta">
-              <span class="case-date">2024</span>
               <h1>Sweatshop Interactive</h1>
               <p class="case-subtitle">
-                Immersive narrative website that turns heavy subject matter into thoughtful, respectful exploration
+                An immersive educational website designed to transform a heavy,
+                text-heavy topic into a respectful, engaging, and story-driven experience.
               </p>
             </div>
 
             <div class="case-tags">
               <span class="tag">Framer</span>
+              <span class="tag">UX/UI Design</span>
               <span class="tag">Interaction Design</span>
-              <span class="tag">Visual Design</span>
               <span class="tag">Storytelling</span>
+              <span class="tag">Information Architecture</span>
             </div>
           </div>
 
-          <!-- Right: Cover Image -->
           <div class="hero-image">
             <div class="case-cover">
-              <img src="../assets/img/sweatshop-mockup.webp" 
-                   alt="Sweatshop Interactive Website Cover" 
+              <img src="../assets/img/sweatshop-mockup.webp"
+                   alt="Mockup of the Sweatshop Interactive website"
                    loading="lazy">
             </div>
           </div>
@@ -65,18 +77,21 @@
       </div>
     </section>
 
-    <!-- Overview -->
+    <!-- OVERVIEW -->
     <section class="section case-section">
       <div class="container">
         <h2>Overview</h2>
         <p>
-          This project challenged our team to create an immersive website about the global impact of sweatshops. Because the topic is emotionally heavy and socially sensitive, the goal was to present difficult information in a way that was informative, respectful, and engaging — not passive or overwhelming.
+          Sweatshop Interactive was a collaborative project focused on educating users
+          about sweatshops, their global presence, and the injustice many workers face.
+          The challenge was not just presenting the information, but presenting it in a way
+          that encouraged users to stay engaged with a difficult topic rather than skim past it.
         </p>
 
         <div class="case-details-grid">
           <div>
             <h3>My Role</h3>
-            <p>UX/UI Designer</p>
+            <p>Lead UX/UI Designer</p>
           </div>
           <div>
             <h3>Timeline</h3>
@@ -84,7 +99,7 @@
           </div>
           <div>
             <h3>Team</h3>
-            <p>2 designers + 3 English students (narrative development)</p>
+            <p>2 designers + 3 English students</p>
           </div>
           <div>
             <h3>Tools</h3>
@@ -94,126 +109,415 @@
       </div>
     </section>
 
-    <!-- Design Strategy -->
+    <!-- PROBLEM -->
+    <section class="section case-section">
+      <div class="container narrow">
+        <h2>The Problem</h2>
+        <p>
+          Our team was asked to create eight immersive and interactive elements that would
+          break up large sections of written content and encourage users to explore the material.
+          Because the subject of sweatshops is emotionally heavy, a traditional article-style layout
+          risked feeling overwhelming, passive, or too wordy.
+        </p>
+        <p>
+          The design challenge was to turn a large amount of serious content into an experience
+          that felt informative and immersive without becoming distracting, playful, or disrespectful.
+        </p>
+      </div>
+    </section>
+
+    <!-- GOALS -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Goals</h2>
+        <div class="case-details-grid">
+          <div>
+            <h3>Inform</h3>
+            <p>
+              Help users understand what sweatshops are, how they operate,
+              and how they affect workers around the world.
+            </p>
+          </div>
+          <div>
+            <h3>Engage</h3>
+            <p>
+              Prevent users from disengaging from long blocks of text by using
+              interactive content and visual storytelling.
+            </p>
+          </div>
+          <div>
+            <h3>Respect the Topic</h3>
+            <p>
+              Maintain a somber, thoughtful tone that supported the subject matter
+              instead of trivializing it.
+            </p>
+          </div>
+          <div>
+            <h3>Encourage Reflection</h3>
+            <p>
+              Leave users with a clearer understanding of the injustice behind sweatshop labor
+              so they could make more informed decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIENCE -->
+    <section class="section case-section">
+      <div class="container narrow">
+        <h2>Audience</h2>
+        <p>
+          This website was designed for people who may not fully understand what sweatshops are
+          or the conditions workers face inside them. The experience was meant to introduce users
+          to the issue in a way that felt clear, approachable, and emotionally grounded.
+        </p>
+        <p>
+          By the end of the site, the goal was for users to walk away with a respectful understanding
+          of the realities of sweatshop labor and the human cost behind fast, inexpensive production.
+        </p>
+      </div>
+    </section>
+
+    <!-- ROLE -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>My Responsibilities</h2>
+        <div class="case-details-grid">
+          <div>
+            <h3>Interaction Design</h3>
+            <p>
+              Designed the interactive map, flip cards, carousel sections,
+              and progress-tracking navigation.
+            </p>
+          </div>
+          <div>
+            <h3>Content Organization</h3>
+            <p>
+              Took over twenty pages of written material from the English team
+              and organized it into sections that made sense visually and narratively.
+            </p>
+          </div>
+          <div>
+            <h3>Layout & Visual Design</h3>
+            <p>
+              Structured the page to reduce fatigue, improve flow,
+              and support a more immersive reading experience.
+            </p>
+          </div>
+          <div>
+            <h3>Implementation</h3>
+            <p>
+              Built the final experience in Framer, researched technical solutions,
+              and sourced supporting media such as imagery and video.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+   <section class="section case-section">
+      <div class="container">
+        <div class="case-panel">
+         <h2>Process</h2>
+
+
+          <div class="case-block reverse">
+            <div class="case-copy">
+              <p>
+          The project began with whiteboard planning and rough wireframe sketches.
+          Once the English students provided the written narrative, I reviewed the content
+          and began mapping it into sections that would be easier for users to move through.
+        </p>
+        <p>
+          Since there was a large amount of text, one of my biggest responsibilities was deciding
+          where interactions could help support understanding, reduce repetition, and keep the page
+          from feeling overwhelmingly long.
+        </p>
+            </div>
+
+
+            <figure class="case-media">
+              <img src="../assets/img/sweatshop-sketches.webp"
+                 alt="Early whiteboard sketches and wireframe planning"
+                 loading="lazy">
+            <figcaption>Early planning focused on structure, pacing, and where interactions could support the narrative.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGN STRATEGY -->
     <section class="section case-section">
       <div class="container">
         <h2>Design Strategy</h2>
         <p>
-          The tone needed to be somber and respectful. We chose drab colors and powerful imagery to match the gravity of the topic. The layout was structured like a narrative article, allowing users to move at their own pace while always knowing where they were in the story.
+          Because the subject matter was serious, the visual tone needed to remain restrained.
+          I used a darker, muted palette and avoided anything that felt overly playful or decorative.
+          The interaction style was intentional: enough to keep users engaged, but never so much that it distracted from the content.
         </p>
 
         <ul class="bullets">
-          <li>Context-aware navigation with a scrolling progress indicator</li>
-          <li>Restrained interactions to avoid trivializing the subject</li>
-          <li>Guided storytelling balanced with user freedom to explore</li>
+          <li>Use interaction to support learning, not just visual interest</li>
+          <li>Chunk content into smaller pieces to reduce fatigue</li>
+          <li>Maintain user orientation through progress-based navigation</li>
+          <li>Balance storytelling with freedom to explore</li>
         </ul>
 
         <div class="case-image-grid">
-          <!-- Replace with your actual images -->
-          <img src="../assets/img/sweatshop-style-guide.webp" alt="Style guide and color scheme" loading="lazy">
-          <img src="../assets/img/sweatshop-navigation.webp" alt="Context-aware navigation with progress indicator" loading="lazy">
+          <figure class="case-media">
+              <img src="../assets/img/sweatshop-moodboard.webp"
+                 alt="Early whiteboard sketches and wireframe planning"
+                 loading="lazy">
+            <figcaption>A muted visual system helped preserve the gravity of the topic.</figcaption>
+            </figure>
+
+          <figure class="case-media">
+              <img src="../assets/img/sweatshop-nav.webp"
+                 alt="Early whiteboard sketches and wireframe planning"
+                 loading="lazy">
+            <figcaption>The navigation helped users track their place across a large amount of content.</figcaption>
+            </figure>
         </div>
       </div>
     </section>
 
-    <!-- Key Interactions -->
-    <section class="section case-section">
-      <div class="container">
-        <h2>Key Interactions</h2>
-        <p>
-          Eight immersive elements were built to deepen engagement without becoming distracting.
-        </p>
-
-        <div class="case-image-grid">
-          <figure>
-            <img src="../assets/img/sweatshop-global-map.webp" alt="Interactive global map" loading="lazy">
-            <figcaption>Clickable map showing regions most affected by sweatshops</figcaption>
-          </figure>
-
-          <figure>
-            <img src="../assets/img/sweatshop-flip-cards.webp" alt="Narrative flip cards" loading="lazy">
-            <figcaption>Flip cards revealing first-person accounts</figcaption>
-          </figure>
-
-          <figure>
-            <img src="../assets/img/sweatshop-scroll-panels.webp" alt="Scroll-based storytelling panels" loading="lazy">
-            <figcaption>Vertical panels controlling pacing and cinematic flow</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- Reflection & Growth -->
-    <section class="section case-section">
-      <div class="container">
-        <h2>Reflection & Growth</h2>
-        <p>
-          This was my first major project in Framer, and it pushed me to learn quickly under a tight deadline. I learned how to build immersive interactions independently, solve technical challenges through experimentation, and balance emotional sensitivity with interaction design.
-        </p>
-
-        <p>
-          Most importantly, I learned that interaction design is not about adding movement for visual interest — it's about using interaction intentionally to support meaning and deeper understanding. Several playful ideas were ultimately removed because they felt too light-hearted for the topic. Prioritizing tone and respect over novelty was a valuable lesson.
-        </p>
-      </div>
-    </section>
-
-    <!-- Live Demo -->
+    <!-- KEY INTERACTIONS -->
  <section class="section case-section">
   <div class="container">
-    <h2>Try It Live – Desktop Experience</h2>
-    <p class="muted" style="text-align: center; margin-bottom: 1.5rem;">
-      Interact with the full desktop version right here. Click buttons, open the menu, scroll — everything works.
-    </p>
+    <div class="case-panel">
+      <h2>Key Interactions</h2>
 
-    <div class="live-demo-container desktop">
-      <iframe 
-        id="live-demo"
-        src="https://heavenly-shares-090572.framer.app/" 
-        title="Coded Diner Website - Live Desktop Demo"
-        sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
-        loading="lazy">
-      </iframe>
-      <div class="loading-spinner" id="demo-loading">Loading desktop demo...</div>
+      <p>
+        The final site included multiple interactive elements designed to improve understanding,
+        support pacing, and prevent the experience from feeling like one long wall of text.
+      </p>
+
+      <div class="three-card-carousel" data-three-card-carousel>
+        <button class="three-card-carousel__arrow prev" type="button" aria-label="Previous interactions">
+          &#10094;
+        </button>
+
+        <div class="three-card-carousel__viewport">
+          <div class="three-card-carousel__track">
+
+            <article class="interaction-card">
+              <div class="interaction-card__media">
+                <img src="../assets/img/sweatshop-map.webp" alt="Interactive sweatshop map" loading="lazy">
+              </div>
+              <div class="interaction-card__body">
+                <p>
+                  <strong>Interactive map:</strong> Helped users visualize the global scale of sweatshops and made the issue feel more real and immediate.
+                </p>
+              </div>
+            </article>
+
+            <article class="interaction-card">
+              <div class="interaction-card__media">
+                <img src="../assets/img/sweatshop-horizontal-scroll.webp" alt="Scroll-based panels in the sweatshop project" loading="lazy">
+              </div>
+              <div class="interaction-card__body">
+                <p>
+                  <strong>Scroll-based panels:</strong> Helped control pacing and added a more immersive narrative rhythm.
+                </p>
+              </div>
+            </article>
+
+            <article class="interaction-card">
+              <div class="interaction-card__media">
+                <img src="../assets/img/sweatshop-firsthand-accounts.webp" alt="Flip cards with firsthand accounts" loading="lazy">
+              </div>
+              <div class="interaction-card__body">
+                <p>
+                  <strong>Flip cards:</strong> Allowed users to connect faces with personal stories, making the content more human and memorable.
+                </p>
+              </div>
+            </article>
+
+            <article class="interaction-card">
+              <div class="interaction-card__media">
+                <img src="../assets/img/sweatshop-carousel.webp" alt="Carousel interaction in the sweatshop project" loading="lazy">
+              </div>
+              <div class="interaction-card__body">
+                <p>
+                  <strong>Carousels:</strong> Broke dense information into smaller sections so users could explore without being overwhelmed.
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <button class="three-card-carousel__arrow next" type="button" aria-label="Next interactions">
+          &#10095;
+        </button>
+      </div>
+
+      <div class="three-card-carousel__dots" data-three-card-dots>
+        <button class="is-active" type="button" aria-label="Show interaction group 1"></button>
+        <button type="button" aria-label="Show interaction group 2"></button>
+      </div>
     </div>
-
-    <!-- Fallback -->
-    <div id="demo-fallback" class="demo-fallback" style="display:none; text-align:center; margin-top:1.5rem;">
-      <p>The interactive desktop preview couldn't load inside this page.</p>
-      <a href="https://heavenly-shares-090572.framer.app/" 
-         target="_blank" 
-         rel="noopener noreferrer" 
-         class="btn btn--primary">
-        Open Full Desktop Site in New Tab →
-      </a>
-    </div>
-
-    <p class="muted small-note" style="text-align:center; font-size:0.9rem; margin-top:1rem;">
-      Interactive desktop preview (may not load in all browsers — use the link above if needed)
-    </p>
   </div>
 </section>
 
-<script>
-  const iframe = document.getElementById('live-demo');
-  const fallback = document.getElementById('demo-fallback');
-  const loading = document.getElementById('demo-loading');
+    <!-- SENSITIVE TOPIC -->
+     <section class="section case-section">
+      <div class="container">
+        <div class="case-panel">
+            <h2>Designing for a Sensitive Topic</h2>
 
-  iframe.onload = () => {
-    loading.style.display = 'none';
-  };
 
-  setTimeout(() => {
-    if (loading.style.display !== 'none') {
-      loading.style.display = 'none';
-      fallback.style.display = 'block';
-    }
-  }, 8000);
+          <div class="case-block">
+            <div class="case-copy">
+           
+        <p>
+          One of the most important parts of this project was knowing when to pull back.
+          Early in the process, I explored illustrated clothing interactions and animated garments
+          in Rive that revealed information on hover. While the concept was visually interesting,
+          it ultimately felt too playful and took away from the seriousness of the subject.
+        </p>
+        <p>
+          I chose to remove those ideas and move in a cleaner, more grounded direction.
+          That decision taught me that good interaction design is not about adding movement everywhere —
+          it is about knowing when interaction supports meaning and when it works against it.
+        </p>
+            </div>
 
-  iframe.onerror = () => {
-    loading.style.display = 'none';
-    fallback.style.display = 'block';
-  };
-</script>
+
+            <figure class="case-media">
+              <img
+                src="../assets/img/sweatshops-clothing.webp"
+                alt="Testing with clothing interaction"
+                loading="lazy"
+              >
+              <figcaption>
+                Created interactive hover state with clothes to slide when cursor enters the area boundries.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ITERATION -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Iteration & Changes</h2>
+        <p>
+          The largest design shift came from removing the more illustrative concepts and refining
+          the site into something cleaner and more professional. I also explored adding a section
+          that would identify brands or sites connected to sweatshop labor, but due to time constraints,
+          that part was not completed.
+        </p>
+      </div>
+    </section>
+
+    <!-- CHALLENGES -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Challenges</h2>
+        <div class="case-details-grid">
+          <div>
+            <h3>Learning Framer Quickly</h3>
+            <p>
+              This was one of my first major projects using Framer, so I had to learn new tools and workflows while actively building the site.
+            </p>
+          </div>
+          <div>
+            <h3>Managing Large Amounts of Content</h3>
+            <p>
+              The writing from the English team was extensive, and I had to shape it into a flow that felt readable, intentional, and visually balanced.
+            </p>
+          </div>
+          <div>
+            <h3>Technical Issues</h3>
+            <p>
+              Some features, especially horizontal scrolling image sections, were difficult to execute and still needed refinement by the end of the project.
+            </p>
+          </div>
+          <div>
+            <h3>Balancing Tone</h3>
+            <p>
+              The biggest design challenge was creating an experience that felt immersive without making the subject feel stylized in the wrong way.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTCOME -->
+    <section class="section case-section">
+      <div class="container narrow">
+        <h2>Outcome</h2>
+        <p>
+          The final website transformed a large amount of written material into a more immersive educational experience.
+          Rather than relying on passive reading alone, the final design used interaction, pacing, and visual structure
+          to help users move through the story with greater clarity and engagement.
+        </p>
+        <p>
+          Most importantly, the final direction better respected the seriousness of the topic. The project showed me
+          that interaction design can be a powerful storytelling tool when it is used with intention.
+        </p>
+      </div>
+    </section>
+
+    <!-- REFLECTION -->
+    <section class="section case-section">
+      <div class="container narrow">
+        <h2>Reflection & Growth</h2>
+        <p>
+          This project taught me that interaction design is not about adding movement just because it looks interesting.
+          It is about helping users stay engaged, understand information more clearly, and move through content in a way that feels meaningful.
+        </p>
+        <p>
+          Working in Framer under pressure also taught me how to pivot, troubleshoot, and reevaluate my ideas when they were not working.
+          I learned how much design judgment matters — especially when working with sensitive subject matter.
+        </p>
+        <p>
+          If I continued this project, I would conduct user testing, refine the glitchier interactions,
+          and fully adapt the experience for mobile so the storytelling and interaction system worked well across all screen sizes.
+        </p>
+      </div>
+    </section>
+
+    <!-- LIVE DEMO -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Try It Live – Desktop Experience</h2>
+        <p class="muted" style="text-align: center; margin-bottom: 1.5rem;">
+          Interact with the full desktop version right here. Click, scroll, and explore the experience.
+        </p>
+
+        <div class="live-demo-container desktop">
+          <iframe
+            id="live-demo"
+            src="https://propitious-football-794329.framer.app/"
+            title="Sweatshop Interactive live desktop demo"
+            sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+            loading="lazy">
+          </iframe>
+          <div class="loading-spinner" id="demo-loading">Loading desktop demo...</div>
+        </div>
+
+        <div id="demo-fallback" class="demo-fallback" style="display:none; text-align:center; margin-top:1.5rem;">
+          <p>The interactive desktop preview couldn't load inside this page.</p>
+          <a href="https://propitious-football-794329.framer.app/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn--primary">
+            Open Full Site in New Tab →
+          </a>
+        </div>
+
+        <p class="muted small-note" style="text-align:center; font-size:0.9rem; margin-top:1rem;">
+          Interactive desktop preview may not load in all browsers.
+        </p>
+      </div>
+    </section>
 
     <!-- CTA -->
     <section class="section case-cta">
@@ -237,6 +541,26 @@
   </footer>
 
   <script>
+    const iframe = document.getElementById('live-demo');
+    const fallback = document.getElementById('demo-fallback');
+    const loading = document.getElementById('demo-loading');
+
+    iframe.onload = () => {
+      loading.style.display = 'none';
+    };
+
+    setTimeout(() => {
+      if (loading.style.display !== 'none') {
+        loading.style.display = 'none';
+        fallback.style.display = 'block';
+      }
+    }, 8000);
+
+    iframe.onerror = () => {
+      loading.style.display = 'none';
+      fallback.style.display = 'block';
+    };
+
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 

@@ -12,13 +12,26 @@
   <a class="skip" href="#main">Skip to content</a>
 
   <header>
+    <button class="back-button" type="button" aria-label="Go back to previous page" data-back-button>
+      ← Back
+    </button>
+
     <div class="container nav">
       <a class="brand" href="../index.html">
-        <span class="brand-badge" aria-hidden="true"></span>
-        <span>Savannah Longmore</span>
-      </a>
+  <img 
+    src="../assets/img/favicon.png"
+    alt="Savannah Longmore logo"
+    class="brand-logo"
+  >
+  <span>Savannah Longmore</span>
+</a>
 
-      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="navMenu">Menu</button>
+      <button class="nav-toggle"
+              data-nav-toggle
+              aria-expanded="false"
+              aria-controls="navMenu">
+        Menu
+      </button>
 
       <nav id="navMenu" class="nav-links" data-nav-menu>
         <a href="../index.html">Home</a>
@@ -31,214 +44,486 @@
 
   <main id="main">
 
-    <!-- Hero – big visual hook -->
+    <!-- Hero -->
     <section class="case-hero">
       <div class="container">
         <div class="hero-split">
-          <!-- Left: Text + hook -->
           <div class="hero-text">
             <div class="case-meta">
               <h1>UVU Bookstore Redesign</h1>
               <p class="case-subtitle">
-                Turned confusing navigation into clear, student-friendly flow → faster checkout, happier users
+                Redesigning the UVU Bookstore website to create a clearer, more intuitive shopping experience for students.
               </p>
             </div>
 
-            <div class="case-tags">
+            <div class="case-tags chips">
               <span class="tag">Figma</span>
               <span class="tag">UX Research</span>
-              <span class="tag">Responsive</span>
               <span class="tag">Eye-tracking</span>
+              <span class="tag">Responsive Design</span>
             </div>
           </div>
 
-          <!-- Right: Final mockup -->
           <div class="hero-image">
             <div class="case-cover">
-              <img src="../assets/img/uvu-bookstore-homepage-mockup.webp" 
-                   alt="Redesigned UVU Bookstore Homepage" 
-                   loading="lazy">
+              <img
+                src="../assets/img/uvu-bookstore-homepage-mockup.webp"
+                alt="Redesigned UVU Bookstore homepage mockup"
+                loading="lazy"
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Problem – short & visual -->
+    <!-- Project Overview -->
     <section class="section case-section">
       <div class="container">
-        <h2>Problem</h2>
-        <p>
-          Customers added items to carts but rarely completed checkout.<br>
-          Navigation felt confusing and disconnected from expectations.<br>
-          Site lacked visual appeal and encouragement to explore products.
-        </p>
+        <div class="case-panel">
+          <h2>Project Overview</h2>
 
-        <div class="case-image-grid" style="margin-top: 1.5rem;">
-          <img src="../assets/img/uvu-original-nav.webp" 
-               alt="Original cluttered homepage" loading="lazy">
-        </div>
-      </div>
-    </section>
-    <!-- Solution – your contribution -->
-    <section class="section case-section">
-      <div class="container">
-        <h2>Solution</h2>
-        <p>
-          I led the homepage redesign to feel more inviting and intuitive.<br>
-          Focused on student-centered flow, clearer hierarchy, and calmer shopping experience.
-        </p>
+          <p>
+            At the beginning of the semester, I worked on a client-based UX project redesigning the UVU Bookstore website.
+            The bookstore team noticed that many customers were adding items to their carts but not completing the checkout process.
+            The site also lacked visual engagement and did not encourage users to explore products.
+          </p>
 
-        <div class="case-details-grid">
-          <div>
-            <h3>My Role</h3>
-            <p>UX/UI Designer</p>
-          </div>
-          <div>
-            <h3>Timeline</h3>
-            <p>12 weeks</p>
-          </div>
-          <div>
-            <h3>Tools</h3>
-            <p>Figma, Illustrator, Eye-tracking</p>
-          </div>
-        </div>
+          <p>
+            Our goal was to identify usability issues and redesign the experience to feel more inviting, intuitive,
+            and student-centered. My primary focus was improving the homepage experience and shopping flow.
+          </p>
 
-        <div class="case-image-grid" style="margin-top: 2rem;">
-          <img src="../assets/img/redesigned-homepage.webp" 
-               alt="Redesigned homepage – cleaner layout" loading="lazy">
+          <div class="case-details-grid">
+            <div>
+              <h3>Role</h3>
+              <p>UX/UI Designer</p>
+            </div>
+
+            <div>
+              <h3>Timeline</h3>
+              <p>12 weeks</p>
+            </div>
+
+            <div>
+              <h3>Team</h3>
+              <p>4 designers → 2 designers</p>
+            </div>
+
+            <div>
+              <h3>Tools</h3>
+              <p>Figma, Adobe Illustrator, Eye-tracking software</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Process Highlights – visual + 1-line captions -->
+    <!-- Research & Discovery -->
     <section class="section case-section">
       <div class="container">
-        <h2>Process Highlights</h2>
+        <div class="case-panel">
+          <h2>Research & Discovery</h2>
 
-        <div class="case-image-grid">
-          <figure>
-            <img src="../assets/img/eye-tracking-heatmap.jpg" 
-                 alt="Eye-tracking heatmap showing navigation confusion" loading="lazy">
-            <figcaption>Eye-tracking revealed users got lost in navigation</figcaption>
-          </figure>
+          <div class="case-block">
+            <div class="case-copy">
+              <p>
+                To better understand how students interacted with the UVU Bookstore website, we conducted usability testing
+                with three participants — two current UVU students and one UVU alumni.
+              </p>
 
-          <figure>
-            <img src="../assets/img/uvu-casestudy-participants.webp" 
-                 alt="Student pain points from usability testing" loading="lazy">
-            <figcaption>Students reported frustration with misplaced information</figcaption>
-          </figure>
+              <p>
+                Participants were asked to go to the first place they would normally visit when using the bookstore.
+                Then they were asked to go through the process of adding an item to the cart and working toward checkout.
+              </p>
 
-          <figure>
-            <img src="../assets/img/uvu-casestudy-wireframes.webp" 
-                 alt="Wireframe iteration – reducing visual noise" loading="lazy">
-            <figcaption>Reduced clutter through multiple layout iterations</figcaption>
-          </figure>
+              <p>
+                Every participant experienced frustration with the navigation. The site structure felt disorganized,
+                and users had difficulty understanding where information was located or how to move through the site.
+              </p>
+            </div>
 
-          <figure>
-            <img src="../assets/img/final-mobile-view.webp" 
-                 alt="Mobile-first responsive design" loading="lazy">
-            <figcaption>Designed for mobile-first clarity and speed</figcaption>
-          </figure>
+            <figure class="case-media">
+              <img
+                src="../assets/img/uvu-participants.webp"
+                alt="UVU student participant observations from usability testing"
+                loading="lazy"
+              >
+              <figcaption>
+                Eye-tracking helped reveal confusion in the navigation and overall browsing flow.
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
+
+ <!-- Behavioral Observations -->
     <section class="section case-section">
-  <div class="container">
-    <h2>Design Evolution</h2>
+      <div class="container">
+        <div class="case-panel">
+          <h2>Behavioral Observations</h2>
 
-    <!-- Tabs -->
-    <div class="comparison-tabs">
-      <button data-tab="before-after" class="tab-btn active">Before vs After</button>
-      <button data-tab="wireframes" class="tab-btn">Wireframes vs Final</button>
-    </div>
+          <p>
+            During testing, several patterns emerged in how participants interacted with the website.
+          </p>
 
-    <!-- Tab 1: Before vs After -->
-    <div id="before-after" class="tab-content active">
-      <div class="before-after-split">
-        <div class="comparison-item before">
-          <div class="label">Before</div>
-          <img src="../assets/img/uvu-bookstore-mockup.webp" alt="Original UVU Bookstore Homepage" loading="lazy">
-        </div>
-        <div class="comparison-item after">
-          <div class="label">After</div>
-          <img src="../assets/img/my-uvu-mockup.webp" alt="Redesigned UVU Bookstore Homepage" loading="lazy">
+          <ul class="bullets">
+            <li>Participants largely ignored sections featuring plush toys or novelty items</li>
+            <li>The technology services tabs were rarely explored and added unnecessary complexity</li>
+            <li>The apparel section was explored briefly but did not capture much interest</li>
+            <li>The bookstore point system confused participants and did not appear to provide clear value</li>
+            <li>Because participants were not required to fully check out, most never noticed the cart icon</li>
+          </ul>
+
+          <p>
+            These observations showed that the website contained a large amount of information that was not relevant to the
+            primary goals of most users.
+          </p>
+
+         <blockquote class="case-quote">
+“Every participant commented on the navigation structure and struggled
+to understand where key information was located.”
+
+<span class="quote-source">– UVU Student Participant</span>
+</blockquote>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Tab 2: Wireframes vs Final -->
-    <div id="wireframes" class="tab-content">
-      <div class="before-after-split">
-        <div class="comparison-item before">
-          <div class="label">Wireframes</div>
-          <img src="../assets/img/wireframes.webp" alt="Wireframe iterations" loading="lazy">
-        </div>
-        <div class="comparison-item after">
-          <div class="label">Final Design</div>
-          <img src="../assets/img/final-design.webp" alt="Final redesigned homepage" loading="lazy">
+    <!-- Key Insights from Testing-->
+    <section class="section case-section">
+      <div class="container">
+        <div class="case-panel">
+          <h2>Eye-Tracking Insights</h2>
+
+          <p>
+            Eye-tracking sessions revealed how students visually explored the site. Most users began by scanning the homepage
+            to understand where major sections were located before attempting to find textbooks.
+          </p>
+
+          <p>
+            However, several participants quickly became confused when they realized that although the navigation included a
+            “Books” section, it did not clearly lead to textbooks. This mismatch between expectations and content caused
+            students to lose confidence in the navigation.
+          </p>
+
+          <ul class="bullets">
+            <li>Users spent significant time scanning the homepage to understand the layout</li>
+            <li>The “Books” tab was dismissed after users realized textbooks were not located there</li>
+            <li>Navigation menus sometimes disappeared when users attempted to access sub-navigation items</li>
+            <li>Important information was scattered across the site instead of grouped logically</li>
+          </ul>
         </div>
       </div>
+    </section>
+
+   
+
+    <!-- Defining the Problem -->
+    <section class="section case-section">
+      <div class="container">
+        <div class="case-panel">
+          <h2>Defining the Problem</h2>
+
+          <div class="case-block reverse">
+            <div class="case-copy">
+              <p>
+                The most significant issue discovered during testing was the navigation system.
+                Participants consistently struggled with dropdown menus that behaved unpredictably and occasionally disappeared
+                when users attempted to access sub-navigation items.
+              </p>
+
+              <p>
+                This glitchy behavior forced participants to restart their navigation process multiple times,
+                interrupting their flow and increasing frustration.
+              </p>
+
+              <p>
+                In addition to technical issues, the navigation contained too many categories and was not organized in a way
+                that aligned with how students expected to find products. Many sections could have been grouped into fewer,
+                clearer navigation tabs.
+              </p>
+            </div>
+
+            <figure class="case-media">
+              <img
+                src="../assets/img/uvu-original-nav.webp"
+                alt="Original UVU Bookstore navigation showing clutter and disorganization"
+                loading="lazy"
+              >
+              <figcaption>
+                The original navigation contained too many competing categories and behaved in ways users did not expect.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Solution -->
+
+    <section class="section case-section">
+      <div class="container">
+        <div class="case-panel">
+          <h2>Design Solution</h2>
+
+          <div class="case-block">
+            <div class="case-copy">
+              <p>
+            My primary focus was redesigning the homepage experience. The original layout felt chaotic and lacked clear visual hierarchy.
+            I wanted the new design to feel welcoming, visually calm, and easier to navigate.
+          </p>
+
+          <p>
+            To achieve this, I reorganized content into clearer categories based on user interest and popular product selections.
+            I also introduced more white space to reduce visual overwhelm and help guide the user’s eye through the page naturally.
+          </p>
+
+          <p>
+            After multiple layout iterations, I selected a design that balanced clarity, usability, and visual appeal.
+          </p>
+            </div>
+
+            <figure class="case-media">
+              <img
+                src="../assets/img/uvu-casestudy-wireframes.webp"
+                alt="Wireframe iterations for the UVU Bookstore redesign"
+                loading="lazy"
+              >
+              <figcaption>
+                Wireframes helped simplify the layout and reduce visual clutter.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before and After -->
+    <section class="section case-section">
+      <div class="container">
+        <div class="case-panel">
+          <h2>Before & After</h2>
+
+          <p class="before-after-intro">
+            Comparing the original bookstore homepage with the redesign shows how clearer hierarchy,
+            better spacing, and more intentional organization helped create a calmer and more student-friendly experience.
+          </p>
+
+          <div id="before-after" class="tab-content active">
+            <div class="before-after-split">
+  <article class="comparison-item">
+    <div class="label">Before</div>
+
+    <div class="mockup-scroll">
+      <img src="../assets/img/orginal-uvu-tall.webp" alt="Original UVU Bookstore homepage" loading="lazy">
     </div>
+
+    <div class="comparison-body">
+      <h3>Cluttered and difficult to scan</h3>
+      <p>
+        The original homepage felt crowded and lacked a clear path for students trying to browse products or locate textbooks.
+      </p>
+    </div>
+  </article>
+
+  <article class="comparison-item">
+    <div class="label">After</div>
+
+    <div class="mockup-scroll">
+      <img src="../assets/img/high-fildelity-uvu-website.webp" alt="Redesigned UVU Bookstore homepage" loading="lazy">
+    </div>
+
+    <div class="comparison-body">
+      <h3>Clearer hierarchy and calmer layout</h3>
+      <p>
+        The redesigned homepage grouped content more intentionally, added breathing room, and helped guide users toward key actions.
+      </p>
+    </div>
+  </article>
+</div>
+          </div>
+
+          <div id="wireframes" class="tab-content">
+            <div class="before-after-split">
+             <article class="comparison-item">
+  <div class="label">Before</div>
+
+  <div class="mockup-scroll">
+    <img src="../assets/img/uvu-bookstore-mockup.webp"
+         alt="Original UVU Bookstore homepage"
+         loading="lazy">
   </div>
-</section>
-    <!-- Results / Impact -->
-    <section class="section case-section">
-      <div class="container">
-        <h2>Results & Impact</h2>
-        <p>
-          In prototype testing, users completed checkout tasks faster and reported less frustration.<br>
-          The cleaner layout felt more trustworthy and easier to navigate.
-        </p>
-      </div>
-    </section>
 
-    <!-- Reflection – short & personal -->
-    <section class="section case-section">
-      <div class="container">
-        <h2>Reflection</h2>
-        <p>
-          Eye-tracking showed me friction points I would have missed otherwise.<br>
-          Research helped me understand what customers are looking for and how to impliment those ideas into a website. <br>
-            If I had more time to redo this website, I would create a mobile version that will make the process easier for students who wish to acess the UVU bookstore through their phone.
-        </p>
-      </div>
-    </section>
-
-<section class="section case-section">
-  <div class="container">
-    <h2>Interactive Figma Prototype</h2>
-    <p class="muted" style="text-align: center; margin-bottom: 2rem;">
-      Click below to explore the full interactive prototype in a new tab.
+  <div class="comparison-body">
+    <h3>Cluttered and difficult to scan</h3>
+    <p>
+      The original homepage felt crowded and lacked a clear path for students trying to browse products.
     </p>
-
-    <div class="figma-preview">
-      <img src="../assets/img/uvu-figma-preview.webp" 
-           alt="UVU Bookstore Figma Prototype Preview" 
-           loading="lazy">
-
-      <div class="figma-overlay">
-        <a href="https://www.figma.com/proto/bDr749pmRoJtL1hJBlmJ1p/High-Fidelity-Mockups---Prototypes--Copy-?page-id=2397%3A12919&node-id=2397-15187&p=f&viewport=224%2C161%2C0.02&t=kp4t1JWxnEFMCXtU-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2397%3A19051&show-proto-sidebar=1" 
-           target="_blank" 
-           rel="noopener noreferrer" 
-           class="btn btn--primary">
-          Open Interactive Prototype →
-        </a>
-      </div>
-    </div>
   </div>
-</section>
+</article>
 
-    <!-- CTA -->
-    <section class="section case-cta">
+             <article class="comparison-item">
+  <div class="label">After</div>
+
+  <div class="mockup-scroll">
+    <img src="../assets/img/my-uvu-mockup.webp"
+         alt="Redesigned UVU Bookstore homepage"
+         loading="lazy">
+  </div>
+
+  <div class="comparison-body">
+    <h3>Clearer hierarchy and calmer layout</h3>
+    <p>
+      The redesigned homepage introduces better spacing, clearer categories, and improved visual hierarchy.
+    </p>
+  </div>
+</article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Browsing Improvements -->
+    <section class="section case-section">
       <div class="container">
-        <h2>Interested in UX redesign work?</h2>
+        <div class="case-panel">
+          <h2>Product Browsing Improvements</h2>
+
+          <div class="case-block">
+            <div class="case-copy">
+              <p>
+                In addition to the homepage, I also helped design the shopping and product browsing experience.
+                Our team introduced filter options to give users more control when searching for products,
+                especially when looking for specific items.
+              </p>
+
+              <p>
+                I helped develop the filter categories and organized them in a way that supported usability and efficiency.
+                I also designed product cards that clearly displayed pricing, imagery, and key product information so users
+                could quickly compare their options.
+              </p>
+
+              <p>
+                The final designs were connected and prototyped in Figma to simulate real interaction and demonstrate the full user flow.
+              </p>
+            </div>
+<article class="comparison-item">
+        
+               <div class="mockup-scroll">
+                 <img src="../assets/img/uvu-product-page.webp" alt="Original UVU Bookstore homepage" loading="lazy">
+               </div>
+              <figcaption>
+                Filters help narrow down options and help particpants find products.
+              </figcaption>
+          
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</article>
+
+    <!-- Results -->
+    <section class="section case-section">
+      <div class="container">
+        <div class="case-panel">
+          <h2>Results & Impact</h2>
+
+          <p>
+            After testing the redesigned prototype, users were able to navigate the website more easily and reported
+            feeling less overwhelmed by the layout. The improved visual hierarchy and clearer navigation helped users
+            locate products faster and reduced frustration.
+          </p>
+
+          <p>
+            Overall, the redesigned experience felt more intuitive, reliable, and inviting.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reflection -->
+    <section class="section case-section">
+      <div class="container">
+        <div class="case-panel">
+          <h2>Reflection</h2>
+
+          <p>
+            One of the most challenging aspects of the project was reorganizing the navigation structure so it made sense
+            both to our design team and to the students who participated in testing. We ultimately prioritized the most
+            commonly used categories and simplified the navigation to reduce information overload.
+          </p>
+
+          <p>
+            This project reinforced how important it is to rely on research rather than personal assumptions when designing
+            user experiences. Observing real users interacting with the website revealed usability problems that were not
+            immediately obvious from a design perspective.
+          </p>
+
+          <p>
+            If I were to continue improving this project, I would design a mobile version of the bookstore experience.
+            The mobile interface currently contains many of the same issues as the desktop version and would benefit from
+            a simplified layout and clearer navigation structure.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Prototype -->
+    <section class="section case-section">
+      <div class="container">
+        <div class="case-panel">
+          <h2>Interactive Figma Prototype</h2>
+
+          <p class="before-after-intro">
+            Click below to explore the full interactive prototype in a new tab.
+          </p>
+
+          <div class="figma-preview-card">
+            <img
+              src="../assets/img/bookstore-hero.webp"
+              alt="Preview of the UVU Bookstore Figma prototype"
+              loading="lazy"
+            >
+
+            <div class="figma-overlay">
+              <a
+                href="https://embed.figma.com/proto/bDr749pmRoJtL1hJBlmJ1p/High-Fidelity-Mockups---Prototypes--Copy-?page-id=2397%3A12919&node-id=2397-19051&p=f&viewport=224%2C161%2C0.02&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2397%3A19051&show-proto-sidebar=1&embed-host=share"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary"
+              >
+                Open Interactive Prototype →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <section class="section case-cta">
+      <div class="container">
+        <h2>Interested in motion work?</h2>
         <div class="btn-row" style="justify-content: center;">
           <a href="../contact.html" class="btn btn--primary">Get in Touch</a>
           <a href="../projects.html" class="btn">Back to Projects</a>
         </div>
       </div>
     </section>
+    <!-- CTA 
+    <section class="section case-cta">
+      <div class="container">
+        <h2>Interested in UX redesign work?</h2>
+        <div class="btn-row" style="justify-content: center;">
+          <a href="../contact.html" class="btn primary">Get in Touch</a>
+          <a href="../projects.html" class="btn">Back to Projects</a>
+        </div>
+      </div>
+    </section>-->
 
   </main>
 

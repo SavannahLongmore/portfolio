@@ -12,11 +12,19 @@
   <a class="skip" href="#main">Skip to content</a>
 
   <header>
+    <button class="back-button" type="button" aria-label="Go back to previous page" data-back-button>
+      ← Back
+    </button>
+
     <div class="container nav">
       <a class="brand" href="../index.html">
-        <span class="brand-badge" aria-hidden="true"></span>
-        <span>Savannah Longmore</span>
-      </a>
+  <img 
+    src="../assets/img/favicon.png"
+    alt="Savannah Longmore logo"
+    class="brand-logo"
+  >
+  <span>Savannah Longmore</span>
+</a>
 
       <button class="nav-toggle"
               data-nav-toggle
@@ -43,11 +51,10 @@
           <!-- Left: Text + Metadata -->
           <div class="hero-text">
             <div class="case-meta">
-              <span class="case-date">2024</span>
               <h1>Coded Diner Website</h1>
               <p class="case-subtitle">
-                Hand-coded responsive diner site with smooth interactions and mobile-first design
-              </p>
+A responsive diner website designed and built in code, with adaptive layouts, interactive components, and mobile-first problem solving.
+</p>
             </div>
 
             <div class="case-tags">
@@ -75,8 +82,12 @@
       <div class="container">
         <h2>Overview</h2>
         <p>
-          This project focused on translating clean design into functional code. I built the entire homepage of a fictional diner website from scratch using HTML, CSS, and JavaScript. The goal was a responsive, engaging site that works beautifully on desktop and mobile while demonstrating solid front-end skills.
-        </p>
+This project focused on understanding how design translates into code. I designed and built the homepage of a fictional diner website using HTML, CSS, and JavaScript, with the goal of creating a responsive and visually engaging experience across both desktop and mobile devices.
+</p>
+
+<p>
+My role included designing the layout, developing interactive components, implementing mobile navigation, and optimizing website performance.
+</p>
 
         <div class="case-details-grid">
           <div>
@@ -97,43 +108,156 @@
 
     <!-- Key Features & Challenges -->
     <section class="section case-section">
-      <div class="container">
-        <h2>Key Features & Challenges</h2>
-        <p>
-          I solved several responsive and interactive challenges while keeping the code clean and performant.
-        </p>
+  <div class="container">
+    <div class="case-panel">
+      <h2>The Challenge</h2>
+      <p>
+The primary challenge in this project was designing a layout that worked consistently across desktop, tablet, and mobile screen sizes. Layouts that looked balanced on large screens often felt awkward or crowded on smaller devices.
+</p>
 
-        <div class="case-image-grid">
-          <figure>
-            <img src="../assets/img/coded-diner-desktop-full.webp" alt="Desktop Homepage" loading="lazy">
-            <figcaption>Desktop view – clean layout, 3-column carousel</figcaption>
-          </figure>
+<p>
+The split-screen layout in particular became difficult to maintain across breakpoints. What worked visually on desktop did not translate well to mobile, so I needed to rethink how content should adapt depending on screen size.
+</p>
+    </div>
+  </div>
+</section>
 
-          <figure>
-            <img src="../assets/img/coded-diner-mobile-full.webp" alt="Mobile Homepage" loading="lazy">
-            <figcaption>Mobile view – stacked layout, 1-card carousel</figcaption>
-          </figure>
+    <!-- Designing in Code -->
+<section class="section case-section">
+  <div class="container">
+    <div class="case-panel">
+      <h2>Designing in Code</h2>
 
-          <figure>
-            <img src="../assets/img/coded-diner-nav-desktop.webp" alt="Desktop Navigation" loading="lazy">
-            <figcaption>Desktop navigation – horizontal menu</figcaption>
-          </figure>
+      <div class="case-block">
+        <div class="case-copy">
+         <p>
+Instead of creating static mockups beforehand, I designed the interface directly in code. This allowed me to immediately test layout decisions and see how they behaved across different screen sizes.
+</p>
 
-          <figure>
-            <img src="../assets/img/coded-diner-nav-mobile.webp" alt="Mobile Hamburger Menu" loading="lazy">
-            <figcaption>Mobile navigation – JavaScript hamburger</figcaption>
-          </figure>
+<p>
+Design and development evolved together throughout the process. As I built each section, I continuously refined spacing, layout structure, and interactions to improve clarity and usability.
+</p>
         </div>
-      </div>
-    </section>
 
-    <!-- Performance & Optimization -->
+        <figure class="case-media">
+          <img src="../assets/img/velombra.webp" alt="Desktop view of the coded diner website" loading="lazy">
+          <figcaption>Building directly in code allowed layout decisions to be tested and refined in real time.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Responsive Strategy -->
+<section class="section case-section">
+  <div class="container">
+    <div class="case-panel">
+      <h2>Responsive Layout Decisions</h2>
+
+      <p>
+        The most difficult part of development was ensuring the layout remained visually balanced across desktop, tablet, and mobile views. The medium breakpoint was particularly challenging because it required deciding whether the layout should behave more like the desktop or mobile version.
+      </p>
+
+      <p>
+        In the end, I chose to mirror the mobile layout at medium sizes because the stacked structure felt clearer and easier to understand for users.
+      </p>
+
+      <div class="device-carousel" data-device-carousel>
+        <button class="device-carousel__arrow prev" type="button" aria-label="Previous view">
+  &#10094;
+</button>
+
+        <div class="device-carousel__viewport">
+          <div class="device-carousel__track">
+
+            <article class="device-slide active">
+              <div class="device-slide__label">Large View</div>
+              <div class="device-card featured-device-card">
+                <div class="mockup-scroll desktop-shot">
+                  <img src="../assets/img/diner-desktop.webp" alt="Desktop version of the diner website" loading="lazy">
+                </div>
+                <div class="device-slide__body">
+                  <p>
+                    <strong>Large View:</strong> Split layouts, larger imagery, and a three-card carousel created a more spacious and immersive experience.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="device-slide">
+              <div class="device-slide__label">Medium View</div>
+              <div class="device-card">
+                <div class="mockup-scroll tablet-shot">
+                  <img src="../assets/img/diner-ipad.webp" alt="Medium screen version of the diner website" loading="lazy">
+                </div>
+                <div class="device-slide__body">
+                  <p>
+                    <strong>Medium View:</strong> The layout began shifting toward the mobile structure to prevent the split sections from feeling awkward or cramped.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="device-slide">
+              <div class="device-slide__label">Small View</div>
+              <div class="device-card">
+                <div class="mockup-scroll mobile-shot">
+                  <img src="../assets/img/diner-iphone.webp" alt="Mobile version of the diner website" loading="lazy">
+                </div>
+                <div class="device-slide__body">
+                  <p>
+                    <strong>Small View:</strong> Content stacked vertically, the carousel showed one card at a time, and the navigation changed to a hamburger menu.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <button class="device-carousel__arrow next" type="button" aria-label="Next view">
+  &#10095;
+</button>
+      </div>
+
+      <div class="device-carousel__dots" data-device-dots>
+        <button class="is-active" type="button" aria-label="Show large view"></button>
+        <button type="button" aria-label="Show medium view"></button>
+        <button type="button" aria-label="Show small view"></button>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- carousel interaction -->
+   <section class="section case-section">
+  <div class="container">
+    <div class="case-panel">
+<h2>Carousel Interaction</h2>
+
+<p>
+One feature I am particularly proud of is the carousel component. On desktop, the carousel displays three cards at once to create a sense of depth and variety. On mobile devices, the carousel adapts to display one card at a time for better readability.
+</p>
+
+<p>
+The carousel also includes looping functionality so that when users reach the end of the content, it seamlessly returns to the beginning. This prevents the interaction from feeling abrupt or broken.
+</p>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Performance & Optimization -->
     <section class="section case-section">
       <div class="container">
-        <h2>Performance & Optimization</h2>
-        <p>
-          I optimized images and code to keep the site fast and smooth:
-        </p>
+ <h2>Performance Optimization</h2>
+
+<p>
+Large images can significantly slow down a website, so I optimized all images before adding them to the project. Images were resized to approximately 600px and converted to WebP format to reduce file size while maintaining visual quality.
+</p>
+
+<p>
+This ensured the site would load quickly and provide a smoother experience for users across different devices.
+</p>
         <ul class="bullets">
           <li>Compressed images → reduced total size significantly</li>
           <li>Mobile-first CSS → faster load on phones</li>
@@ -141,7 +265,67 @@
         </ul>
       </div>
     </section>
+<section class="section case-section">
+  <div class="container">
+    <div class="case-panel">
+      <h2>Key Design Decisions</h2>
 
+      <div class="case-details-grid">
+        <div>
+          <h3>Reduced Visual Clutter</h3>
+          <p>
+            I considered adding a food gallery, but removed the idea because it made the page feel too busy and disrupted the flow.
+          </p>
+        </div>
+
+        <div>
+          <h3>Adapted Split Layouts</h3>
+          <p>
+            Split-screen sections worked well on desktop, but felt uncomfortable on mobile, so I changed them to stacked layouts on smaller screens.
+          </p>
+        </div>
+
+        <div>
+          <h3>Adjusted Carousel Behavior</h3>
+          <p>
+            The carousel displayed three cards on desktop for a richer browsing experience, but switched to one card on mobile for clarity and readability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section case-section">
+  <div class="container">
+    <div class="case-panel">
+      <h2>What I Learned</h2>
+
+      <div class="case-details-grid">
+        <div>
+          <h3>Design Changes Across Screens</h3>
+          <p>
+            A layout that works on desktop will not always work on mobile. Responsive design often requires rethinking the structure, not just resizing it.
+          </p>
+        </div>
+
+        <div>
+          <h3>Code Shapes Design</h3>
+          <p>
+            Designing directly in code helped me see how layout, spacing, and interaction decisions affected the real user experience.
+          </p>
+        </div>
+
+        <div>
+          <h3>Less Can Be Better</h3>
+          <p>
+            Not every idea improves a design. If a feature adds clutter or overwhelms the user, it is better to simplify.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     <!-- Final Full View -->
 <section class="section case-section">
   <div class="container">
@@ -150,7 +334,7 @@
       Interact with the real site: click buttons, open the menu, scroll — all inside this preview.
     </p>
 
-    <div class="live-demo-container">
+    <div class="live-demo-container phone">
       <iframe 
         id="live-demo"
         src="https://savannahlongmore.github.io/diner/" 
@@ -166,7 +350,7 @@
       <a href="https://savannahlongmore.github.io/diner/" 
          target="_blank" 
          rel="noopener noreferrer" 
-         class="btn btn--primary">
+         class="btn primary">
         Open Live Site in New Tab →
       </a>
     </div>
@@ -201,12 +385,12 @@
   };
 </script>
 
-    <!-- CTA -->
-    <section class="section case-cta">
+<!-- CTA -->
+      <section class="section case-cta">
       <div class="container">
-        <h2>Interested in coded, responsive projects?</h2>
+        <h2>Interested in motion work?</h2>
         <div class="btn-row" style="justify-content: center;">
-          <a href="../contact.html" class="btn btn--primary">Get in Touch</a>
+          <a href="../contact.html" class="btn primary">Get in Touch</a>
           <a href="../projects.html" class="btn">Back to Projects</a>
         </div>
       </div>

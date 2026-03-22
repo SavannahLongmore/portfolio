@@ -47,7 +47,7 @@ image: "assets/img/multimedia-homecard.webp"
   blurb: "Motion graphic created in After Effects exploring lighting, atmosphere, and cinematic timing.",
   tags: ["After Effects", "Motion Design", "Animation"],
   href: "case-studies/disney-motion.html",
-  image: "assets/img/disney-castle-cover.webp"
+  image: "assets/img/Disneyfirework1.webp"
 },
 {
   id: "remarried-graphic",
@@ -57,4 +57,4 @@ image: "assets/img/multimedia-homecard.webp"
   href: "case-studies/booklet-graphic.html",
   image: "assets/img/remarriedgraphicdesign.webp"
 }
-];
+]

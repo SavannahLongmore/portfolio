@@ -2,138 +2,88 @@
 <html lang="en">
 
 <head>
-
-<meta charset="utf-8" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<title>Savannah Longmore | Resume</title>
-
-<link rel="stylesheet" href="css/styles.css" />
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Savannah Longmore | Resume</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
-
 
 <body>
 
-
+<a class="skip" href="#main">Skip to content</a>
 
 <header>
-
-<div class="container nav">
-
-<a class="brand" href="index.html">
-
-<span class="brand-badge"></span>
-
-<span>Savannah Longmore</span>
-
+  <div class="container nav">
+      <a class="brand" href="index.html">
+  <img 
+    src="assets/img/favicon.png"
+    alt="Savannah Longmore logo"
+    class="brand-logo"
+  >
+  <span>Savannah Longmore</span>
 </a>
 
-<nav class="nav-links">
+    <button class="nav-toggle"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="navMenu">
+      Menu
+    </button>
 
-<a href="index.html">Home</a>
-
-<a href="projects.html">Projects</a>
-
-<a href="about.html">About</a>
-
-<a href="contact.html">Contact</a>
-
-</nav>
-
-</div>
-
+    <nav id="navMenu" class="nav-links" data-nav-menu>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-
-
-
-<main>
+<main id="main">
 
 <section class="section">
+  <div class="container">
 
-<div class="container">
+    <h1>Resume</h1>
 
+    <div class="btn-row" style="margin-bottom: 1.5rem;">
+      <a class="btn primary" href="assets/resume/Savannah-Longmore-Resume.pdf" download>
+        Download Resume
+      </a>
 
+      <a class="btn" href="index.html">
+        ← Back to Home
+      </a>
+    </div>
 
-<h1>Resume</h1>
+    <!-- Resume Image Preview -->
+   <div class="card resume-card">
 
-
-
-<div class="btn-row" style="margin-bottom: 1.5rem;">
-
-
-<a class="btn primary" href="assets/resume/Savannah-Longmore-Resume.pdf" download>
-
-Download Resume
-
-</a>
-
-
-
-<a class="btn" href="index.html">
-
-← Back to Home
-
-</a>
-
+  <div class="resume-preview">
+    <img
+      src="assets/img/Savannah-Longmore-Resume.webp"
+      alt="Preview of Savannah Longmore's resume"
+      loading="lazy">
+  </div>
 
 </div>
 
-
-
-
-<div class="resume-viewer">
-  <iframe 
-    src="assets/resume/Savannah-Longmore-Resume.pdf#toolbar=0&navpanes=0&scrollbar=0" 
-    title="Savannah Longmore Resume"
-    allowfullscreen
-    loading="lazy">
-  </iframe>
-</div>
-
-<div class="resume-actions btn-row" style="justify-content: center; margin-top: 2rem; gap: 1.2rem;">
-  <a href="assets/resume/Savannah-Longmore-Resume.pdf" download class="btn btn--primary">
-    Download Resume (PDF)
-  </a>
-  <a href="index.html" class="btn">
-    ← Back to Home
-  </a>
-</div>
-
-
-
-</div>
-
+  </div>
 </section>
 
 </main>
 
-
-
-
 <footer class="footer">
-
-<div class="container">
-
-© <span id="year"></span> Savannah Longmore
-
-</div>
-
+  <div class="container">
+    © <span id="year"></span> Savannah Longmore
+  </div>
 </footer>
 
-
-
 <script>
-
 document.getElementById("year").textContent = new Date().getFullYear();
-
 </script>
 
-
+<script type="module" src="js/main.js"></script>
 
 </body>
-
 </html>

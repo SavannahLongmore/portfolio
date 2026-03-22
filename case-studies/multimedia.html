@@ -12,11 +12,19 @@
   <a class="skip" href="#main">Skip to content</a>
 
   <header>
+    <button class="back-button" type="button" aria-label="Go back to previous page" data-back-button>
+      ← Back
+    </button>
+
     <div class="container nav">
       <a class="brand" href="../index.html">
-        <span class="brand-badge" aria-hidden="true"></span>
-        <span>Savannah Longmore</span>
-      </a>
+  <img 
+    src="../assets/img/favicon.png"
+    alt="Savannah Longmore logo"
+    class="brand-logo"
+  >
+  <span>Savannah Longmore</span>
+</a>
 
       <button class="nav-toggle"
               data-nav-toggle
@@ -36,7 +44,7 @@
 
   <main id="main">
 
-    <!-- Split-Screen Hero -->
+    <!-- Hero -->
     <section class="case-hero">
       <div class="container">
         <div class="hero-split">
@@ -45,22 +53,23 @@
               <span class="case-date">2024</span>
               <h1>Multimedia Optimization Research</h1>
               <p class="case-subtitle">
-                Exploring file formats, compression, performance impact, and user perception trade-offs
+                A digital media research project exploring how image, audio, and video formats affect quality, loading speed, performance, and overall user experience.
               </p>
             </div>
 
             <div class="case-tags">
               <span class="tag">UX Research</span>
               <span class="tag">Web Performance</span>
-              <span class="tag">Media Formats</span>
+              <span class="tag">Digital Media</span>
               <span class="tag">Optimization</span>
+              <span class="tag">Format Testing</span>
             </div>
           </div>
 
           <div class="hero-image">
             <div class="case-cover">
-              <img src="../assets/img/multimedia-mockup.webp" 
-                   alt="Multimedia Optimization Research Cover" 
+              <img src="../assets/img/multimedia-mockup.webp"
+                   alt="Mockup of multimedia optimization research project"
                    loading="lazy">
             </div>
           </div>
@@ -73,84 +82,325 @@
       <div class="container">
         <h2>Overview</h2>
         <p>
-          This research project examined how different multimedia formats (JPEG vs WebP vs AVIF, video codecs, etc.) affect loading times, bandwidth usage, visual quality, and perceived user experience on the web. The goal was to create practical guidelines for choosing the right format in real-world design scenarios.
+          This class project focused on understanding how digital media formats work across images, audio, and video. Since these media types are used constantly in web and digital design, I wanted to better understand how compression, file size, and format choice affect both technical performance and the user’s experience.
+        </p>
+        <p>
+          The goal was to identify ways to reduce file sizes while still maintaining strong visual and audio quality, so that websites and digital platforms can load faster, run smoother, and create less frustration for users.
         </p>
 
         <div class="case-details-grid">
           <div>
-            <h3>My Role</h3>
-            <p>UX Researcher & Analyst</p>
+            <h3>Project Type</h3>
+            <p>Class Research Project</p>
           </div>
           <div>
-            <h3>Methods</h3>
-            <p>Performance testing, A/B comparisons, user perception surveys</p>
+            <h3>My Role</h3>
+            <p>Researcher, Tester, Analyst</p>
+          </div>
+          <div>
+            <h3>Focus</h3>
+            <p>File size, quality, compression, and performance</p>
           </div>
           <div>
             <h3>Deliverable</h3>
-            <p>Research report + format decision framework</p>
+            <p>Research report + practical media optimization insights</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Problem -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>The Problem</h2>
+        <p>
+          Large media files can slow down websites, interrupt playback, and create frustrating user experiences. If a page takes too long to load, videos buffer, or images are too heavy, users are more likely to leave the site altogether.
+        </p>
+        <p>
+          This project explored how designers can make smarter media decisions by balancing file size and quality. Instead of assuming the most common format is the best one, I wanted to test which formats actually perform best in real digital experiences.
+        </p>
+      </div>
+    </section>
+
+    <!-- Research Questions -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Research Questions</h2>
+        <ul class="bullets">
+          <li>Which media formats create the best balance between quality and file size?</li>
+          <li>How much compression can be applied before users begin noticing quality loss?</li>
+          <li>Does faster loading matter more to users than perfect visual quality?</li>
+          <li>How do media assets behave differently across laptop and mobile devices?</li>
+          <li>What format choices lead to a smoother, less frustrating web experience?</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Methodology -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Methodology</h2>
+        <p>
+          To keep testing consistent, I used the same raw image file and exported it into multiple formats while adjusting compression and quality settings. I then compared each version side-by-side to evaluate file size, clarity, color retention, and visible loss of information.
+        </p>
+        <p>
+          I also compared audio and video experiences across devices, testing playback quality, buffering, and smoothness on both phone and laptop screens. This helped me understand not only the technical differences between formats, but how those differences affect real users in different viewing situations.
+        </p>
+
+        <div class="case-details-grid">
+          <div>
+            <h3>Image Testing</h3>
+            <p>JPEG, AVIF, WebP, PNG, GIF, TIFF</p>
+          </div>
+          <div>
+            <h3>Audio Testing</h3>
+            <p>Lossy vs. lossless, richness, noise degradation</p>
+          </div>
+          <div>
+            <h3>Video Testing</h3>
+            <p>Loading speed, buffering, playback smoothness, quality</p>
+          </div>
+          <div>
+            <h3>Devices</h3>
+            <p>Phone and laptop comparison</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testing Process -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Testing Process</h2>
+        <div class="case-details-grid">
+          <div>
+            <h3>01. Start with Raw Media</h3>
+            <p>I began with original high-quality media files so each test had a consistent baseline.</p>
+          </div>
+          <div>
+            <h3>02. Export in Multiple Formats</h3>
+            <p>I converted files into different formats and adjusted quality settings to find the lowest acceptable file size.</p>
+          </div>
+          <div>
+            <h3>03. Compare Side-by-Side</h3>
+            <p>I reviewed visuals and playback differences directly, paying attention to clarity, color, pixelation, and smoothness.</p>
+          </div>
+          <div>
+            <h3>04. Evaluate User Impact</h3>
+            <p>I considered how performance changes would affect real users navigating websites and digital media experiences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add stronger visuals -->
+<section class="section case-section">
+  <div class="container">
+    <div class="case-panel">
+      <h2>Process Visuals</h2>
+
+        <p>
+          These visuals help show the testing workflow, side-by-side comparisons, and the relationship between file size and perceived quality.
+        </p>
+
+      <figure class="zoom-card">
+        <button class="zoom-image-btn" type="button" data-open-image-modal aria-label="Open enlarged format comparison chart">
+          <img
+            src="../assets/img/multimedia-comparison-images.webp"
+            alt="Photoshop format comparison chart showing JPEG, WebP, AVIF, TIFF, PNG, and GIF at multiple compression levels"
+            loading="lazy"
+          >
+        </button>
+        <figcaption>
+          Click the chart to enlarge it and view the findings more clearly.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="image-modal" id="imageModal" aria-hidden="true">
+  <div class="image-modal__backdrop" data-close-image-modal></div>
+
+  <div class="image-modal__panel" role="dialog" aria-modal="true" aria-label="Enlarged format comparison chart">
+    <button class="image-modal__close" type="button" data-close-image-modal aria-label="Close enlarged image">
+      ×
+    </button>
+
+    <img
+      src="../assets/img/multimedia-comparison-images.webp"
+      alt="Enlarged Photoshop format comparison chart"
+    >
+  </div>
+</div>
 
     <!-- Key Findings -->
     <section class="section case-section">
       <div class="container">
         <h2>Key Findings</h2>
         <p>
-          Through controlled tests and user feedback, several clear patterns emerged regarding format performance and perception.
+          After comparing multiple media formats, a few clear patterns stood out.
         </p>
 
         <ul class="bullets">
-          <li>AVIF and WebP reduced file sizes by 30–60% compared to JPEG while maintaining or improving perceived quality</li>
-          <li>Users consistently rated faster-loading pages as higher quality — even when objective visual differences were small</li>
-          <li>Mobile users were particularly sensitive to large video files; modern codecs (e.g. AV1, VP9) significantly improved playback smoothness</li>
-          <li>Accessibility (alt text, captions) was frequently overlooked in highly compressed assets</li>
+          <li>WebP offered the strongest balance of small file size and image quality.</li>
+          <li>JPEG was familiar and widely used, but it lost more visible information at stronger compression levels.</li>
+          <li>Reducing file size matters because users are more likely to tolerate slight quality loss than slow loading times.</li>
+          <li>Laptop screens often hid compression flaws better, while the Pioneer TV screens made pixelation and quality loss more visible.</li>
+          <li>For video, playback smoothness and buffering had a stronger impact on the experience than perfect visual sharpness.</li>
+          <li>For audio, lossy vs. lossless differences were easier to notice when listening carefully at the same point in a track.</li>
         </ul>
 
-        <div class="case-image-grid">
-          <img src="../assets/img/multimedia-chart.webp" alt="File size vs quality comparison chart" loading="lazy">
-          <img src="../assets/img/multimedia-test-results.webp" alt="Performance test results across formats" loading="lazy">
-          <img src="../assets/img/multimedia-user-feedback.webp" alt="User perception survey results" loading="lazy">
+        <div class="multimedia-grid">
+          <div class="multimedia-card">
+          <img src="../assets/img/multimedia-image-comparison.webp"
+               alt="Chart showing file size versus quality comparison"
+               loading="lazy">
+               </div>
+<div class="multimedia-card">
+          <img src="../assets/img/multimedia-phone.webp"
+               alt="Performance test results across multiple multimedia formats"
+               loading="lazy">
+               </div>
+<div class="multimedia-card">
+          <img src="../assets/img/multimedia-video.webp"
+               alt="Summary graphic of user perception and loading performance"
+               loading="lazy">
+               </div>
         </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- UX Impact -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Why This Matters for UX</h2>
+        <p>
+          This research reinforced that media optimization is not just a technical issue — it is a user experience issue. If media slows down a page, buffers constantly, or disrupts the flow of a site, users become frustrated and leave. A fast experience builds trust, while a slow one creates friction.
+        </p>
+        <p>
+          One of the biggest takeaways from this project was that speed often matters more to users than perfect quality. As long as the media still looks and sounds good, people care more about responsiveness and ease of use than tiny differences in fidelity.
+        </p>
+      </div>
+    </section>
+
+<section class="section case-section">
+  <div class="container">
+    <div class="case-panel">
+      <h2>Early Concept</h2>
+
+ <p>
+        At the beginning of my project, I experimented with layout and hierarchy. In the end, I recreated and adjusted the layout so the hierarchy was clearier, it was more balanced, and the explanation was easier to understand. 
+      </p>
+
+      <div class="before-after-split">
+        <article class="comparison-item">
+          <div class="label">Before</div>
+
+          <img
+            src="../assets/img/multimedia-before.webp"
+            alt="Beach booklet spread design"
+            loading="lazy"
+          >
+
+          <div class="comparison-body">
+            <p>
+              
+            </p>
+          </div>
+        </article>
+
+        <article class="comparison-item">
+          <div class="label">After</div>
+
+          <img
+            src="../assets/img/multimedia-after.webp"
+            alt="Wedding booklet spread design"
+            loading="lazy"
+          >
+
+          <div class="comparison-body">
+            <p>
+              
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- What I Learned -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>What I Learned</h2>
+        <p>
+          Before this project, I assumed JPEG would be the strongest image format simply because it is so commonly used. After testing, I was surprised to find that WebP consistently performed better by keeping file sizes low while still preserving strong visual quality.
+        </p>
+        <p>
+          This project also changed the way I think when designing and coding websites. I now pay closer attention to image dimensions, file size, and export format because even small media decisions can affect the experience of an entire page.
+        </p>
       </div>
     </section>
 
     <!-- Recommendations -->
     <section class="section case-section">
       <div class="container">
-        <h2>Recommendations</h2>
+        <h2>Practical Recommendations</h2>
         <p>
-          Based on the findings, I developed a simple decision framework for multimedia assets:
+          Based on my testing, these are the strategies I would apply in future web and digital design projects:
         </p>
+
         <ul class="bullets">
-          <li>Default to AVIF/WebP for static images when browser support allows</li>
-          <li>Use JPEG as fallback for broader compatibility</li>
-          <li>Apply lazy loading + responsive images (srcset) for all media</li>
-          <li>Prefer modern video codecs (AV1/VP9) and provide captions/transcripts</li>
+          <li>Use WebP when possible for strong compression with good visual quality.</li>
+          <li>Always review file size before placing media on a website.</li>
+          <li>Compress assets as much as possible without causing obvious quality loss.</li>
+          <li>Test media on multiple screen sizes, since compression issues appear differently across devices.</li>
+          <li>Prioritize speed and smooth performance, especially for websites that rely heavily on visuals or video.</li>
+          <li>Remember that optimization supports usability, not just technical efficiency.</li>
         </ul>
       </div>
     </section>
 
-    <!-- Full Research Document Preview -->
+
+
+
+    <!-- Reflection -->
+    <section class="section case-section">
+      <div class="container">
+        <h2>Reflection</h2>
+        <p>
+          One limitation of this project was time. Although I went beyond the basic expectations of the assignment, I would have liked to explore even more tools, formats, and export settings. If I continued this project, I would test more video export formats, compare additional image-compression tools, and spend more time examining audio wrappers and file behavior in different environments.
+        </p>
+        <p>
+          Even with those limitations, this project gave me a much stronger understanding of how media works in digital spaces and how thoughtful optimization can improve both performance and the user’s experience.
+        </p>
+      </div>
+    </section>
+
+    <!-- Full Research Document -->
     <section class="section case-section">
       <div class="container">
         <h2>Full Research Document</h2>
         <p class="muted" style="text-align: center; margin-bottom: 2rem;">
-          80-page research report exploring multimedia formats, compression, performance, and user experience.
+          View the full research document for a deeper look at my testing, observations, and analysis.
         </p>
 
         <div class="pdf-preview-card">
-          <img src="../assets/img/mulimedia-output-1-2.webp" 
-               alt="Multimedia Optimization Research Document Cover" 
+          <img src="../assets/img/mulimedia-output-1-2.webp"
+               alt="Cover preview of multimedia optimization research document"
                loading="lazy">
 
           <div class="pdf-overlay">
             <button class="btn btn--primary" data-open-pdf>
               View Full Research Report
             </button>
-            <a href="../assets/documents/multimedia-research.pdf" 
-               download 
+            <a href="../assets/documents/media_audio_outputs_1.3.pdf"
+               download
                class="btn">
               Download PDF
             </a>
@@ -162,7 +412,7 @@
     <!-- CTA -->
     <section class="section case-cta">
       <div class="container">
-        <h2>Interested in performance-focused research?</h2>
+        <h2>Interested in research-driven design decisions?</h2>
         <div class="btn-row" style="justify-content: center;">
           <a href="../contact.html" class="btn btn--primary">Get in Touch</a>
           <a href="../projects.html" class="btn">Back to Projects</a>
@@ -175,13 +425,13 @@
   <!-- PDF Modal -->
   <div id="pdfModal" class="modal" aria-hidden="true">
     <div class="modal__overlay" data-close-pdf></div>
-    
+
     <div class="modal__panel pdf-panel">
       <button class="modal-close" data-close-pdf aria-label="Close document">×</button>
-      
-      <iframe 
+
+      <iframe
         id="pdf-frame"
-        src="../assets/documents/multimedia-research.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+        src="../assets/documents/media_audio_outputs_1.3.pdf#toolbar=0&navpanes=0&scrollbar=0"
         title="Multimedia Optimization Research Document"
         allowfullscreen>
       </iframe>
@@ -199,7 +449,6 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // PDF Modal
     const pdfModal = document.getElementById("pdfModal");
 
     if (pdfModal) {
