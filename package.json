@@ -1,0 +1,11 @@
+{
+  "name": "savannah-longmore-portfolio",
+  "private": true,
+  "scripts": {
+    "sass": "sass scss/styles.scss css/styles.css --style=expanded",
+    "sass:watch": "sass --watch scss/styles.scss css/styles.css --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}
