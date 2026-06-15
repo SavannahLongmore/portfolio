@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Savannah Longmore | UX/UI Designer</title>
+  <title>Savannah Longmore | Portfolio</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -44,20 +44,18 @@
 <section class="hero">
   <div class="container hero-grid">
 
-    <!-- Intro + carousel: stacked on all breakpoints; carousel first on desktop -->
-    <div class="card hero-intro">
-      <p class="hero__eyebrow">UX/UI Designer</p>
-      <h1>Designing clear, research-informed digital experiences.</h1>
+    <!-- Left side: text + chips + buttons -->
+    <div class="card">
+      <h1>Web & UI design with a user-centered mindset.</h1>
       <p class="lede">
-        I’m a UX/UI designer with hands-on experience in user research, Figma prototyping, usability testing, and responsive interface design. I collaborate with stakeholders to turn insights into polished, accessible UI—and bring selected projects to life on the web with HTML and CSS.
+        I’m a Web and Graphic Designer with hands-on experience in Figma, responsive design, and accessibility-focused layouts.<br><br>
+        I build thoughtful interfaces and bring them to life on the web.
       </p>
       <div class="chips">
-        <span class="chip">UX Research</span>
-        <span class="chip">UI Design</span>
-        <span class="chip">Figma Prototypes</span>
-        <span class="chip">Usability Testing</span>
-        <span class="chip">Responsive Design</span>
+        <span class="chip">Figma</span>
         <span class="chip">HTML / CSS</span>
+        <span class="chip">Responsive Design</span>
+        <span class="chip">Accessibility-aware</span>
       </div>
       <div class="btn-row">
         <a class="btn btn--primary" href="projects.html">View Projects</a>
@@ -67,9 +65,16 @@
       </div>
     </div>
     
-    <!-- Carousel – slides injected by main.js from projects-data.js -->
-    <div class="hero-visual" data-hero-carousel tabindex="0" aria-label="Featured project carousel">
-      <div class="project-carousel" aria-live="polite"></div>
+    <!-- Right side: Carousel container – no extra .card wrapper -->
+    <div class="hero-visual">
+      <div class="project-carousel">
+        <img src="assets/img/uvu-bookstore-homepage-mockup.webp" alt="UVU Bookstore Redesign" class="carousel-item">
+        <img src="assets/img/velombra-mockup.webp" alt="Coded Diner Website" class="carousel-item">
+        <img src="assets/img/sweatshop-mockup.webp" alt="Sweatshop Interactive" class="carousel-item">
+        <img src="assets/img/multimedia-mockup.webp" alt="Multimedia Optimization Research" class="carousel-item">
+        <img src="assets/img/disney-castle-cover.webp" alt="Disney Castle Motion Graphic" class="carousel-item">
+        <img src="assets/img/Wedding-cover-mockup.webp" alt="Survival Guide for Getting Remarried" class="carousel-item">
+      </div>
     </div>
 
   </div>
@@ -78,18 +83,15 @@
     <section class="section">
       <div class="container">
         <div class="sectionHead">
-          <p class="sectionHead__eyebrow">Selected work</p>
           <h2>Case Studies</h2>
-          <p class="sectionHead__lede muted">
-            Projects spanning UX research, UI design, Figma prototypes, usability testing, responsive design, and client collaboration.
-          </p>
+          <p class="muted">Selected projects — research, design, code, motion</p>
         </div>
 
         <!-- This is where your JavaScript will insert the dynamic project cards -->
         <div class="projectsGrid" data-project-grid>
           <!-- Cards will be added here automatically by main.js -->
           <!-- While developing, you can leave a loading message or placeholder if you want -->
-          <p class="muted text-center">Loading projects...</p>
+          <p style="text-align:center; color:var(--muted);">Loading projects...</p>
         </div>
       </div>
     </section>
@@ -103,6 +105,10 @@
       <a href="assets/resume/Savannah-Longmore-Resume.pdf" download>Download Resume</a>
     </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
   <script type="module" src="js/main.js"></script>
 

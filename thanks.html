@@ -51,12 +51,12 @@
             In the meantime, feel free to explore more of my work:
           </p>
 
-          <div class="btn-row btn-row--center" style="flex-wrap: wrap; gap: 1rem;">
+          <div class="btn-row" style="justify-content: center; flex-wrap: wrap; gap: 1rem;">
             <a href="projects.html" class="btn btn--primary">View Projects</a>
             <a href="index.html" class="btn">Back to Home</a>
           </div>
 
-          <div class="text-center" style="margin-top: 3rem;">
+          <div style="margin-top: 3rem; text-align: center;">
             <p class="muted" style="font-size: 0.95rem;">
               Or connect with me on
               <a href="https://www.linkedin.com/in/savannah-longmore-990329307/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -75,6 +75,10 @@
       <a href="assets/resume/Savannah-Longmore-Resume.pdf" download>Download Resume</a>
     </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
   <script type="module" src="js/main.js"></script>
 

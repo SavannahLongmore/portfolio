@@ -1,63 +1,60 @@
 export const projects = [
-  {
+{
     id: "uvu-bookstore",
     title: "UVU Bookstore Redesign",
-    blurb:
-      "End-to-end UX case study: stakeholder collaboration, research synthesis, wireframes, high-fidelity Figma prototypes, and usability-informed homepage improvements.",
-    tags: ["UX Research", "UI Design", "Figma", "Usability Testing", "Responsive"],
+    blurb: "Research-driven homepage redesign focused on navigation, clarity, and hierarchy.",
+    tags: ["Figma", "UX Research", "Responsive"],
     href: "case-studies/uvu-bookstore.html",
     image: "assets/img/bookstore-hero.webp",
-    heroImage: "assets/img/uvu-bookstore-homepage-mockup.webp",
-    featured: true,
-    spotlight: true,
+    featured: true
   },
-  {
+{
     id: "coded-diner",
     title: "Coded Diner Website",
-    blurb: "Responsive website built with HTML and CSS—translating layout decisions into clean, accessible code.",
-    tags: ["HTML", "CSS", "Responsive", "UI Design"],
-    href: "case-studies/diner.html",
-    image: "assets/img/velombra-mockup.webp",
-    heroImage: "assets/img/velombra-mockup.webp",
-    featured: true,
+    blurb: "Developed a responsive website using HTML and CSS with a clean layout and clear navigation.",
+    tags: ["HTML", "CSS", "Responsive"],
+    href: "case-studies/diner.html",          // ← this should now work if file exists
+    image: "assets/img/velombra.webp",
+    featured: true
   },
   {
-    id: "sweatshop",
-    title: "Sweatshop Interactive Website",
-    blurb: "Immersive storytelling experience designed and prototyped in Framer with a focus on interaction and narrative flow.",
-    tags: ["UX", "Interaction Design", "Framer"],
-    href: "case-studies/sweatshop.html",
-    image: "assets/img/sweatshops-homecard.webp",
-    heroImage: "assets/img/sweatshop-mockup.webp",
-    featured: true,
-  },
-  {
-    id: "multimedia",
-    title: "Multimedia Optimization Research",
-    blurb: "UX research exploring media formats, performance trade-offs, and user experience implications.",
-    tags: ["UX Research", "Usability", "Performance"],
-    href: "case-studies/multimedia.html",
-    image: "assets/img/multimedia-homecard.webp",
-    heroImage: "assets/img/multimedia-mockup.webp",
-  },
-  {
-    id: "disney-motion",
-    title: "Disney Castle Motion Graphic",
-    blurb: "Motion graphic created in After Effects exploring lighting, atmosphere, and cinematic timing.",
-    tags: ["After Effects", "Motion Design", "Animation"],
-    href: "case-studies/disney-motion.html",
-    image: "assets/img/Disneyfirework1.webp",
-    heroImage: "assets/img/disney-castle-cover.webp",
-  },
-  {
-    id: "remarried-graphic",
-    title: "Survival Guide for Getting Remarried",
-    blurb: "Editorial booklet design focused on typography, layout hierarchy, and print-ready production.",
-    tags: ["InDesign", "Graphic Design", "Typography"],
-    href: "case-studies/booklet-graphic.html",
-    image: "assets/img/remarriedgraphicdesign.webp",
-    heroImage: "assets/img/remarriedgraphicdesign.webp",
-  },
-];
-
-export const heroProjects = projects.filter((project) => project.featured);
+id: "sweatshop",
+title: "Sweatshop Interactive Website",
+blurb: "Designed and developed immersive storytelling experience in Framer.",
+tags: ["UX", "Interaction", "Framer"],
+href: "case-studies/sweatshop.html",
+image: "assets/img/sweatshops-homecard.webp",
+featured: true
+},
+ // {
+   // id: "client-website",
+   // title: "Client Website",
+   // blurb: "Designed and implemented a responsive website using Figma and WordPress.",
+  //  tags: ["Figma", "WordPress", "Implementation"],
+  //  href: "case-studies/client-website.html"
+//  },
+{
+id: "multimedia",
+title: "Multimedia Optimization Research",
+blurb: "UX research project exploring media formats and performance.",
+tags: ["Research", "UX", "Performance"],
+href: "case-studies/multimedia.html",
+image: "assets/img/multimedia-homecard.webp"
+},
+{
+  id: "disney-motion",
+  title: "Disney Castle Motion Graphic",
+  blurb: "Motion graphic created in After Effects exploring lighting, atmosphere, and cinematic timing.",
+  tags: ["After Effects", "Motion Design", "Animation"],
+  href: "case-studies/disney-motion.html",
+  image: "assets/img/Disneyfirework1.webp"
+},
+{
+  id: "remarried-graphic",
+  title: "Survival Guide for Getting Remarried",
+  blurb: "Graphic Design ",
+  tags: ["InDesign", "Graphic Design", "Typography"],
+  href: "case-studies/booklet-graphic.html",
+  image: "assets/img/remarriedgraphicdesign.webp"
+}
+]

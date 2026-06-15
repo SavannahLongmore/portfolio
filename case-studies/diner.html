@@ -345,12 +345,12 @@ This ensured the site would load quickly and provide a smoother experience for u
       <div class="loading-spinner" id="demo-loading">Loading demo...</div>
     </div>
 
-    <div id="demo-fallback" class="demo-fallback u-hidden text-center" style="margin-top:1.5rem;">
+    <div id="demo-fallback" class="demo-fallback" style="display:none; text-align:center; margin-top:1.5rem;">
       <p>Looks like the interactive preview couldn't load here.</p>
       <a href="https://savannahlongmore.github.io/diner/" 
          target="_blank" 
          rel="noopener noreferrer" 
-         class="btn btn--primary">
+         class="btn primary">
         Open Live Site in New Tab →
       </a>
     </div>
@@ -361,13 +361,36 @@ This ensured the site would load quickly and provide a smoother experience for u
   </div>
 </section>
 
+<script>
+  const iframe = document.getElementById('live-demo');
+  const fallback = document.getElementById('demo-fallback');
+  const loading = document.getElementById('demo-loading');
+
+  // Hide loading spinner once iframe starts loading content
+  iframe.onload = () => {
+    loading.style.display = 'none';
+  };
+
+  // Show fallback if iframe fails or takes too long
+  setTimeout(() => {
+    if (loading.style.display !== 'none') {
+      loading.style.display = 'none';
+      fallback.style.display = 'block';
+    }
+  }, 8000);
+
+  iframe.onerror = () => {
+    loading.style.display = 'none';
+    fallback.style.display = 'block';
+  };
+</script>
 
 <!-- CTA -->
       <section class="section case-cta">
       <div class="container">
-        <h2>Interested in responsive web design?</h2>
-        <div class="btn-row btn-row--center">
-          <a href="../contact.html" class="btn btn--primary">Get in Touch</a>
+        <h2>Interested in motion work?</h2>
+        <div class="btn-row" style="justify-content: center;">
+          <a href="../contact.html" class="btn primary">Get in Touch</a>
           <a href="../projects.html" class="btn">Back to Projects</a>
         </div>
       </div>
@@ -382,6 +405,10 @@ This ensured the site would load quickly and provide a smoother experience for u
       <a href="../assets/resume/Savannah-Longmore-Resume.pdf" download>Download Resume</a>
     </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
   <script type="module" src="../js/main.js"></script>
 

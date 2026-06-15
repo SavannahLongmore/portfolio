@@ -94,7 +94,7 @@
               </div>
 
               <!-- Honeypot spam protection (invisible to humans) -->
-              <input type="text" name="_gotcha" class="u-hidden" />
+              <input type="text" name="_gotcha" style="display:none" />
 
               <!-- Custom email subject -->
               <input type="hidden" name="_subject" value="New message from Savannah's Portfolio" />
@@ -148,6 +148,10 @@
       <a href="assets/resume/Savannah-Longmore-Resume.pdf" download>Download Resume</a>
     </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
   <script type="module" src="js/main.js"></script>
 

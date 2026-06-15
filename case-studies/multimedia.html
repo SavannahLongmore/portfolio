@@ -446,6 +446,35 @@
     </div>
   </footer>
 
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const pdfModal = document.getElementById("pdfModal");
+
+    if (pdfModal) {
+      document.querySelectorAll("[data-open-pdf]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          pdfModal.classList.add("is-open");
+          document.body.style.overflow = "hidden";
+        });
+      });
+
+      document.querySelectorAll("[data-close-pdf]").forEach(el => {
+        el.addEventListener("click", () => {
+          pdfModal.classList.remove("is-open");
+          document.body.style.overflow = "";
+        });
+      });
+
+      pdfModal.addEventListener("click", e => {
+        if (e.target === pdfModal) {
+          pdfModal.classList.remove("is-open");
+          document.body.style.overflow = "";
+        }
+      });
+    }
+  </script>
+
   <script type="module" src="../js/main.js"></script>
 
 </body>

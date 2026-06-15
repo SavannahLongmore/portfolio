@@ -1,0 +1,12 @@
+/* medium.scss – Tablet / medium screens only */
+
+@media (min-width: 700px) and (max-width: 1019px) {
+  .projectsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.8rem;
+  }
+
+  .hero-visual {
+    height: 360px;
+  }
+}
