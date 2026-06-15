@@ -503,7 +503,7 @@
           <div class="loading-spinner" id="demo-loading">Loading desktop demo...</div>
         </div>
 
-        <div id="demo-fallback" class="demo-fallback" style="display:none; text-align:center; margin-top:1.5rem;">
+        <div id="demo-fallback" class="demo-fallback u-hidden text-center" style="margin-top:1.5rem;">
           <p>The interactive desktop preview couldn't load inside this page.</p>
           <a href="https://propitious-football-794329.framer.app/"
              target="_blank"
@@ -539,30 +539,6 @@
       <a href="../assets/resume/Savannah-Longmore-Resume.pdf" download>Download Resume</a>
     </div>
   </footer>
-
-  <script>
-    const iframe = document.getElementById('live-demo');
-    const fallback = document.getElementById('demo-fallback');
-    const loading = document.getElementById('demo-loading');
-
-    iframe.onload = () => {
-      loading.style.display = 'none';
-    };
-
-    setTimeout(() => {
-      if (loading.style.display !== 'none') {
-        loading.style.display = 'none';
-        fallback.style.display = 'block';
-      }
-    }, 8000);
-
-    iframe.onerror = () => {
-      loading.style.display = 'none';
-      fallback.style.display = 'block';
-    };
-
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 
   <script type="module" src="../js/main.js"></script>
 
